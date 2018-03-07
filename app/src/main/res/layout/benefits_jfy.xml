@@ -1,0 +1,20 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView style="@style/BenefitsIcon"
+        android:text="@string/favorite_on_icon"/>
+
+    <TextView
+        android:id="@+id/benefits_jfy_title"
+        style="@style/BenefitsTitle"
+        />
+
+    <TextView
+        android:id="@+id/benefits_jfy_description"
+        style="@style/BenefitsDescription"/>
+
+</LinearLayout>

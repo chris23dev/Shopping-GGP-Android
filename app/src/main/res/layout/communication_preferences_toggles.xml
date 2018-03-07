@@ -1,0 +1,74 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="left"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/AccountCheckboxItem">
+
+        <TextView style="@style/Text.Regular"
+            android:id="@+id/email_alert_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/send_email_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/AccountCheckboxItem">
+
+        <TextView style="@style/Text.Regular"
+            android:id="@+id/sms_alert_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1" />
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/send_sms_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sms_message_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_8"
+        android:layout_marginRight="@dimen/space_8"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/phone_number_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8"
+            android:paddingRight="@dimen/space_8">
+
+            <EditText
+                android:id="@+id/sms_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_8"
+                android:gravity="left"
+                android:imeOptions="actionDone"
+                android:inputType="phone"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/sms_disclaimer_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_4"
+            android:textSize="@dimen/size_10"/>
+
+    </LinearLayout>
+
+</LinearLayout>

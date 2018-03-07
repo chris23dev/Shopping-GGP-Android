@@ -1,0 +1,23 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View style="@style/HorizontalDivider"/>
+
+    <TextView
+        android:id="@+id/promotions_header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_space_medium"
+        android:layout_marginBottom="@dimen/standard_space_extra_small"
+        android:layout_marginLeft="@dimen/standard_space_extra_small"
+        android:gravity="left"
+        android:textSize="@dimen/size_14"
+        android:textColor="@color/black"
+        style="@style/Text.Medium"/>
+
+    <View style="@style/HorizontalDivider"/>
+
+</LinearLayout>

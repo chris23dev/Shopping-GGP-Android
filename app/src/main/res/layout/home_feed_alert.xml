@@ -1,0 +1,28 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mall_alert_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/standard_space_screen"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/light_yellow"
+    android:visibility="gone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/standard_space_medium"
+        android:text="@string/alert_icon_1"
+        android:textSize="@dimen/size_28"
+        android:textColor="@color/alert_color"
+        style="@style/Text.Icon"/>
+
+    <TextView
+        android:id="@+id/alert_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_16"
+        android:layout_marginLeft="@dimen/standard_space_small"/>
+
+</LinearLayout>

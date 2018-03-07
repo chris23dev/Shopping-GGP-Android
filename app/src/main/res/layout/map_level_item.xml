@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/map_level_button_size"
+    android:layout_marginBottom="@dimen/map_level_item_overlap_margin">
+
+    <TextView
+        android:id="@+id/level_description_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/map_level_wayfind_view_half_size"
+        android:background="@drawable/map_level_middle_view"
+        android:foreground="?selectableItemBackground"
+        android:theme="@style/SelectableItemBlue"
+        android:gravity="center"
+        android:maxWidth="@dimen/map_level_item_max_width"
+        android:minWidth="@dimen/map_level_button_size"
+        android:paddingLeft="@dimen/space_4"
+        android:paddingRight="@dimen/space_4"
+        style="@style/Text.Regular"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/text_indicator_view"
+        android:layout_width="@dimen/map_level_wayfind_view_size"
+        android:layout_height="@dimen/map_level_wayfind_view_size"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="@dimen/map_level_item_overlap_margin_opposite"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_16"
+        android:visibility="invisible"
+        app:backgroundTint="@color/blue"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/icon_indicator_view"
+        android:layout_width="@dimen/map_level_wayfind_view_size"
+        android:layout_height="@dimen/map_level_wayfind_view_size"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="@dimen/map_level_item_overlap_margin_opposite"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/space_16"
+        android:visibility="invisible"
+        style="@style/Text.Icon"/>
+
+</FrameLayout>

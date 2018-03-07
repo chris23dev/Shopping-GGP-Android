@@ -1,0 +1,162 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_space_medium"
+        android:layout_marginLeft="@dimen/standard_space_screen"
+        android:layout_marginRight="@dimen/standard_space_screen"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/garage_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_28"
+            android:textColor="@color/dark_gray"
+            style="@style/Text.Regular"/>
+
+        <TextView
+            android:id="@+id/description_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/dark_gray"
+            style="@style/Text.Medium"/>
+
+        <TextView
+            android:id="@+id/directions_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/standard_space_small"
+            android:background="?selectableItemBackground"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/blue"
+            style="@style/Text.Regular"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_space_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/park_assist_spaces_occupied"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/dark_gray"
+                style="@style/Text.Regular"/>
+
+            <TextView
+                android:id="@+id/available_label_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/green"
+                style="@style/Text.Regular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/occupied_count_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="start"
+                android:textSize="@dimen/size_24"
+                android:textColor="@color/dark_gray"
+                style="@style/Text.Medium"/>
+
+            <TextView
+                android:id="@+id/available_count_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textSize="@dimen/size_24"
+                android:textColor="@color/green"
+                style="@style/Text.Medium"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_48"
+            android:layout_marginTop="@dimen/standard_space_small"
+            android:layout_marginBottom="@dimen/standard_space_medium"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/space_2"
+                android:layout_height="match_parent"
+                android:gravity="start"
+                android:background="@color/gray"/>
+
+            <ProgressBar
+                android:id="@+id/availability_bar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/space_16"
+                android:layout_marginLeft="@dimen/space_4"
+                android:layout_marginRight="@dimen/space_4"
+                android:progressDrawable="@drawable/parking_availability_bar"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+            <View
+                android:layout_width="@dimen/space_2"
+                android:layout_height="match_parent"
+                android:gravity="end"
+                android:background="@color/gray"/>
+
+        </LinearLayout>
+
+        <com.ggp.theclub.view.CustomRecyclerView
+            android:id="@+id/parking_level_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:id="@+id/instructions_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/gray"
+            style="@style/Text.Regular"/>
+
+        <TextView
+            android:id="@+id/levels_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/standard_space_small"
+            android:gravity="center"
+            android:background="?selectableItemBackgroundBorderless"
+            android:text="@string/expand_icon"
+            android:textSize="@dimen/size_32"
+            android:textColor="@color/gray"
+            style="@style/Text.Icon"/>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalDivider"/>
+
+</LinearLayout>

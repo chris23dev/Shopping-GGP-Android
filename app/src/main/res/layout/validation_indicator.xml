@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/space_8"
+    android:paddingBottom="@dimen/space_8">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/message_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center_vertical|left"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ok_icon"
+        android:text="@string/check_icon"
+        app:backgroundTint="@color/green"
+        android:layout_gravity="right|center_vertical"
+        android:visibility="invisible"
+        style="@style/accountPasswordIcon"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/error_icon"
+        android:text="@string/cancel_icon"
+        app:backgroundTint="@color/red"
+        android:layout_gravity="right"
+        android:visibility="invisible"
+        style="@style/accountPasswordIcon"/>
+</FrameLayout>

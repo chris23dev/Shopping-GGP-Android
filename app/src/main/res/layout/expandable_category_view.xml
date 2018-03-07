@@ -1,0 +1,59 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:theme="@style/SelectableItemBlack"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <FrameLayout
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/sale_category_min_height"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/collapsed_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"/>
+
+        <ImageView
+            android:id="@+id/expanded_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/collapsed_overlay"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/dark_overlay"/>
+
+        <View
+            android:id="@+id/expanded_overlay"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:background="@color/extra_dark_overlay"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="@dimen/size_18"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/child_category_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</FrameLayout>

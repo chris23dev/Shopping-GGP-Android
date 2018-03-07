@@ -1,0 +1,9 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/space_32"
+    android:textSize="@dimen/size_48"
+    android:textColor="@color/translucent_white"
+    android:background="@drawable/level_toast"
+    style="@style/Text.Regular"/>

@@ -1,0 +1,13 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_disclaimer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/dark_gray"
+    android:textSize="@dimen/size_12"
+    android:layout_marginTop="@dimen/standard_space_medium"
+    android:layout_marginBottom="@dimen/standard_space_medium"
+    android:layout_marginLeft="@dimen/standard_space_screen"
+    android:layout_marginRight="@dimen/standard_space_screen"
+    android:textStyle="italic"
+    style="@style/Text.Regular"/>

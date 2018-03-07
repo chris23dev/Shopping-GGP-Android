@@ -1,0 +1,109 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/map_layout"/>
+
+    <com.ggp.theclub.view.FilterView
+        android:id="@+id/filter_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/tenant_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/bottom_sheet_peek_height">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/standard_space_medium"
+            android:layout_gravity="top"
+            android:background="@drawable/black_bottom_scrim"/>
+
+        <LinearLayout
+            android:id="@+id/tenant_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_sheet_height"
+            android:background="@color/white"
+            android:foreground="?selectableItemBackground"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_sheet_height"
+                android:padding="@dimen/standard_space_medium"
+                android:orientation="horizontal"
+                android:layout_gravity="top">
+
+                <FrameLayout
+                    android:id="@+id/list_logo"
+                    android:layout_width="@dimen/bottom_sheet_logo_width"
+                    android:layout_height="@dimen/space_72"
+                    android:layout_marginRight="@dimen/standard_space_screen"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/text_logo"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:gravity="center"
+                        android:textSize="@dimen/space_10"/>
+
+                    <ImageView
+                        android:id="@+id/image_logo"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:adjustViewBounds="true"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|left"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tenant_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size_18"
+                        style="@style/Text.Regular"/>
+
+                    <TextView
+                        android:id="@+id/tenant_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/size_12"
+                        style="@style/Text.Regular"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/filter_menu_fab"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/standard_space_screen"
+        android:clickable="true"
+        android:visibility="gone"
+        android:src="@drawable/icon_wayfinding"
+        app:layout_anchor="@id/tenant_card"
+        app:layout_anchorGravity="top|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

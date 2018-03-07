@@ -1,0 +1,98 @@
+<resources>
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_6">6dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_10">10dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_18">18dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_42">42dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_64">64dp</dimen>
+    <dimen name="space_72">72dp</dimen>
+
+    <dimen name="standard_space_extra_small">4dp</dimen>
+    <dimen name="standard_space_small">8dp</dimen>
+    <dimen name="standard_space_medium">12dp</dimen>
+    <dimen name="standard_space_large">24dp</dimen>
+    <dimen name="standard_space_screen">32dp</dimen>
+    <dimen name="alignment_adjust">-4dp</dimen>
+
+    <dimen name="home_feed_item_padding">@dimen/standard_space_screen</dimen>
+
+    <dimen name="divider">1dp</dimen>
+    <dimen name="stroke">1dp</dimen>
+    <dimen name="tab_layout_height">48dp</dimen>
+    <dimen name="fast_scroller_bubble">64dp</dimen>
+    <dimen name="list_item_height">80dp</dimen>
+
+    <dimen name="main_toolbar_height">80dp</dimen>
+
+    <dimen name="account_text_logo">110dp</dimen>
+    <dimen name="account_image_logo">108dp</dimen>
+    <dimen name="account_landing_header">290dp</dimen>
+
+    <dimen name="tenant_list_logo_height">60dp</dimen>
+    <dimen name="tenant_list_logo_width">70dp</dimen>
+    <dimen name="tenant_logo_height">240dp</dimen>
+    <dimen name="tenant_logo_margin">56dp</dimen>
+    <dimen name="tenant_header_height">32dp</dimen>
+    <dimen name="tenant_detail_promotion_cell_height">150dp</dimen>
+
+    <dimen name="movie_toolbar_height">300dp</dimen>
+
+    <dimen name="promotion_tenant_logo_width">160dp</dimen>
+    <dimen name="promotion_text_logo_height">100dp</dimen>
+
+    <dimen name="static_map_height">256dp</dimen>
+
+    <dimen name="showtime_width">80dp</dimen>
+
+    <dimen name="movie_item_image_height">120dp</dimen>
+    <dimen name="movie_item_image_width">80dp</dimen>
+
+    <dimen name="date_picker_height">74dp</dimen>
+
+    <dimen name="sheet_text_scrim_height_top">90dp</dimen>
+    <dimen name="sheet_text_scrim_height_bottom">70dp</dimen>
+
+    <dimen name="bottom_sheet_height">105dp</dimen>
+    <dimen name="bottom_sheet_peek_height">120dp</dimen>
+    <dimen name="bottom_sheet_logo_width">100dp</dimen>
+
+    <dimen name="map_level_item_corner_radius">2dp</dimen>
+    <dimen name="map_level_button_size">48dp</dimen>
+    <dimen name="map_level_item_max_width">64dp</dimen>
+    <dimen name="map_level_item_overlap_margin">-2dp</dimen>
+    <dimen name="map_level_item_overlap_margin_opposite">2dp</dimen>
+    <dimen name="map_level_wayfind_view_size">24dp</dimen>
+    <dimen name="map_level_wayfind_view_half_size">12dp</dimen>
+
+    <dimen name="parking_selector_height">42dp</dimen>
+    <dimen name="parking_selector_width">76dp</dimen>
+
+    <dimen name="show_password_toggle_width">70dp</dimen>
+
+    <dimen name="sale_category_min_height">80dp</dimen>
+
+    <dimen name="size_8">8sp</dimen>
+    <dimen name="size_10">10sp</dimen>
+    <dimen name="size_11">11sp</dimen>
+    <dimen name="size_12">12sp</dimen>
+    <dimen name="size_14">14sp</dimen>
+    <dimen name="size_16">16sp</dimen>
+    <dimen name="size_18">18sp</dimen>
+    <dimen name="size_20">20sp</dimen>
+    <dimen name="size_22">22sp</dimen>
+    <dimen name="size_24">24sp</dimen>
+    <dimen name="size_28">28sp</dimen>
+    <dimen name="size_32">32sp</dimen>
+    <dimen name="size_36">36sp</dimen>
+    <dimen name="size_48">48sp</dimen>
+    <dimen name="size_64">64sp</dimen>
+    <dimen name="size_128">128sp</dimen>
+</resources>

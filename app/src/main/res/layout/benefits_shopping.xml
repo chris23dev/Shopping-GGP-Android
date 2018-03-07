@@ -1,0 +1,21 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView style="@style/BenefitsIcon"
+        android:text="@string/sales_icon"
+        android:textSize="@dimen/size_36"/>
+
+    <TextView
+        android:id="@+id/benefits_shopping_title"
+        style="@style/BenefitsTitle"
+        />
+
+    <TextView
+        android:id="@+id/benefits_shopping_description"
+        style="@style/BenefitsDescription"/>
+
+</LinearLayout>

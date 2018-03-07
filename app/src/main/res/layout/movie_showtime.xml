@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.AppCompatButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/showtime_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/showtime_width"
+    android:layout_marginRight="@dimen/standard_space_extra_small"
+    android:layout_marginTop="@dimen/standard_space_extra_small"
+    android:paddingLeft="@dimen/space_6"
+    android:paddingRight="@dimen/space_6"
+    android:textColor="@color/white"
+    android:textSize="@dimen/size_12"
+    android:textStyle="bold"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:elevation="@dimen/space_4"/>

@@ -1,0 +1,55 @@
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:id="@+id/events_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/home_feed_item_padding"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            <TextView
+                    android:text="@string/calendar_icon"
+                    style="@style/CardIcon"/>
+
+            <TextView android:id="@+id/empty_event_text1"
+                      style="@style/CardText"
+                      android:textColor="?android:attr/textColorPrimary"/>
+
+            <TextView android:id="@+id/empty_event_text2"
+                      style="@style/CardText"
+                      android:textStyle="normal"/>
+
+            <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/register_button"
+                    style="@style/StandardButton"
+                    android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <com.ggp.theclub.view.CustomRecyclerView
+                android:id="@+id/events_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:visibility="gone"
+                app:paddingTop="@dimen/standard_space_extra_small"
+                app:paddingBottom="@dimen/standard_space_extra_small"
+                app:clipToPadding="false"
+                app:loadingViewEnabled="true"
+                app:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

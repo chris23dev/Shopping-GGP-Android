@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/standard_space_screen"
+        android:layout_marginRight="@dimen/standard_space_screen"
+        android:layout_marginTop="@dimen/standard_space_medium"
+        android:layout_marginBottom="@dimen/standard_space_medium">
+
+        <TextView
+            android:id="@+id/tenant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/size_18"
+            android:layout_gravity="left"
+            style="@style/Text.Regular"/>
+
+        <FrameLayout
+            android:id="@+id/favorite_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/favorite_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/gray"
+                android:text="@string/favorite_off_icon"
+                android:textSize="@dimen/size_28"
+                style="@style/Text.Icon"/>
+
+            <TextView
+                android:id="@+id/favorite_on"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:text="@string/favorite_on_icon"
+                android:textSize="@dimen/size_28"
+                android:visibility="gone"
+                style="@style/Text.Icon"/>
+        </FrameLayout>
+    </FrameLayout>
+
+    <View style="@style/HorizontalDivider"/>
+
+</LinearLayout>

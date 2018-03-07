@@ -1,0 +1,438 @@
+<resources>
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:windowAnimationStyle">@style/ActivitySlidingTransitions</item>
+    </style>
+
+    <style name="OnboardingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:windowBackground">@drawable/diamond_background</item>
+        <item name="android:windowAnimationStyle">@style/ActivityFadingTransitions</item>
+    </style>
+
+    <style name="OnboardingRegistrationTheme" parent="OnboardingTheme">
+        <item name="android:windowAnimationStyle">@style/ActivitySlidingTransitions</item>
+    </style>
+
+    <style name="OnboardingTextInputTheme" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="LoadingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/transparent</item>
+        <item name="colorPrimaryDark">@android:color/transparent</item>
+        <item name="android:windowBackground">@drawable/diamond_background</item>
+        <item name="android:windowAnimationStyle">@style/ActivityFadingTransitions</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+        <item name="colorAccent">@color/primary_blue</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@style/ActivitySlidingTransitions</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:windowAnimationStyle">@style/MainActivityTransitions</item>
+    </style>
+
+    <style name="ActivitySlidingTransitions" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="ActivityFadingTransitions" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityCloseExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <style name="MainActivityTransitions" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:activityOpenExitAnimation">@android:anim/fade_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="HorizontalDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="VerticalDivider">
+        <item name="android:layout_width">@dimen/divider</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="SectionHeader" parent="Text.Bold">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/space_16</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_24</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="StandardButton" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/space_16</item>
+        <item name="android:padding">@dimen/space_16</item>
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textColor">@color/standard_button</item>
+        <item name="android:textAppearance">@style/Text.Medium</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="backgroundTint">@color/blue</item>
+    </style>
+
+    <style name="LargeButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/space_12</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LargeButtonIcon" parent="Text.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">@dimen/size_24</item>
+    </style>
+
+    <style name="LargeButtonLabel" parent="Text.Regular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/size_20</item>
+    </style>
+
+    <!--Onboarding-->
+    <style name="OnboardingBold">
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="OnboardingRegular">
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="BenefitsIcon" parent="Text.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/space_12</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_32</item>
+        <item name="android:background">@drawable/circle_outline</item>
+    </style>
+
+    <style name="BenefitsTitle" parent="Text.Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/standard_space_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_20</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="BenefitsDescription" parent="Text.Light">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/standard_space_medium</item>
+        <item name="android:paddingRight">@dimen/standard_space_screen</item>
+        <item name="android:paddingLeft">@dimen/standard_space_screen</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/extra_light_gray</item>
+        <item name="android:textSize">@dimen/size_18</item>
+    </style>
+
+    <style name="MallSelectDivider">
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">@dimen/divider</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <!-- More Screen -->
+    <style name="MoreScreenButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/standard_space_screen</item>
+        <item name="android:paddingRight">@dimen/standard_space_small</item>
+        <item name="android:paddingTop">@dimen/standard_space_medium</item>
+        <item name="android:paddingBottom">@dimen/standard_space_medium</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="MoreScreenButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="MoreScreenButtonIcon" parent="Text.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/standard_space_small</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:text">@string/next_icon</item>
+    </style>
+
+    <style name="MoreScreenSocialNetworkButtons" parent="Text.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/standard_space_small</item>
+        <item name="android:padding">@dimen/standard_space_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/size_22</item>
+        <item name="android:background">@drawable/circle</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="backgroundTint">@color/primary_blue</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <!-- Home Feed -->
+    <style name="HomeFeedHeader" >
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textColor">@color/dark_gray_text</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="HomeFeedLink">
+        <item name="android:textColor">@color/dark_gray_text</item>
+        <item name="android:textSize">@dimen/size_20</item>
+    </style>
+
+    <style name="HomeFeedInfo">
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:textColor">@color/medium_gray_text</item>
+    </style>
+
+    <!-- Shopping -->
+    <style name="RefineLabel" parent="Text.Regular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/space_16</item>
+        <item name="android:layout_marginLeft">@dimen/space_16</item>
+        <item name="android:layout_marginRight">@dimen/space_16</item>
+        <item name="android:layout_marginBottom">@dimen/space_4</item>
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="ShoppingCategory">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginBottom">@dimen/standard_space_medium</item>
+    </style>
+
+    <!-- Wayfinding -->
+    <style name="WayfindingSelector">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/space_8</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WayfindingSelectorLabel">
+        <item name="android:layout_width">@dimen/space_64</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/space_8</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="WayfindingSelectorText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/space_16</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="WayfindingLocationDescriptionText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">@dimen/space_12</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Tenant Detail Page -->
+    <style name="TenantRibbonButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/standard_space_medium</item>
+        <item name="android:paddingBottom">@dimen/standard_space_medium</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:theme">@style/SelectableItemBlack</item>
+    </style>
+
+    <style name="TenantRibbonIcon" parent="Text.Icon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_32</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TenantRibbonLabel" parent="Text.Regular">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/space_4</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/size_10</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Mall info page -->
+
+    <style name="MallInfoIcon" parent="Text.Icon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center|top</item>
+        <item name="android:layout_marginRight">@dimen/standard_space_small</item>
+        <item name="android:padding">@dimen/space_2</item>
+        <item name="android:textSize">@dimen/space_20</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MallInfoText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/size_16</item>
+        <item name="android:textColor">@color/primary_blue</item>
+    </style>
+    <!-- Promotion pages -->
+    <style name="PromotionDetailInfoIcon" parent="Text.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_22</item>
+        <item name="android:textColor">@color/medium_gray</item>
+    </style>
+
+    <style name="PromotionDetailInfoText" parent="Text.Regular">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/space_10</item>
+        <item name="android:textColor">@color/medium_gray</item>
+    </style>
+
+    <!-- Account Page -->
+    <style name="AccountCheckboxItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:layout_margin">@dimen/space_12</item>
+    </style>
+
+    <style name="accountPasswordIcon" parent="Text.Icon">
+        <item name="android:layout_width">@dimen/space_24</item>
+        <item name="android:layout_height">@dimen/space_24</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/space_4</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/circle</item>
+    </style>
+
+    <!-- Shared Cards -->
+    <style name="CardIcon" parent="Text.Icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_128</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:layout_marginBottom">@dimen/standard_space_medium</item>
+    </style>
+
+    <style name="CardText" parent="Text.Bold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/size_18</item>
+        <item name="android:layout_marginBottom">@dimen/standard_space_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="SelectableItemBlue">
+        <item name="colorControlHighlight">@color/light_blue</item>
+    </style>
+
+    <style name="SelectableItemWhite">
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="SelectableItemBlack">
+        <item name="colorControlHighlight">@color/black</item>
+    </style>
+
+    <style name="TabFragment">
+        <item name="android:theme">@style/SelectableItemBlue</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MainTab">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/tab_layout_height</item>
+        <item name="android:paddingBottom">@dimen/standard_space_small</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <!-- Fonts -->
+    <style name="Text.Light" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="Text.Medium" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="Text.Regular" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="Text.Bold" parent="android:TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Text.Icon" parent="android:TextAppearance">
+        <item name="fontPath">@string/icon_font_path</item>
+    </style>
+</resources>

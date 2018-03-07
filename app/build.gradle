@@ -1,0 +1,200 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'newrelic'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    defaultConfig {
+        multiDexEnabled true
+        applicationId "com.ggp.theclub"
+        minSdkVersion 17
+        targetSdkVersion 24
+    }
+
+    sourceSets.test {
+        resources.srcDirs = ["src/test"]
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('../app.keystore.jks')
+            storePassword 'Passw0rd!'
+            keyAlias 'appDebug'
+            keyPassword 'Passw0rd!'
+        }
+        release {
+            storeFile file('../release.keystore')
+            storePassword 'theclub9'
+            keyAlias 'the club'
+            keyPassword 'theclub9'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            buildConfigField "boolean", "CUSTOM_LOCALISATION", "true"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            buildConfigField "boolean", "CUSTOM_LOCALISATION", "true"
+        }
+    }
+
+    productFlavors {
+        dev {
+            applicationId "com.ggp.theclub.dev"
+            resValue "string", "api_base_url", "https://digitalservices-qa.ggp.com/mall-api/"
+            resValue "string", "malls_languages_url", "http://ggp-mobile.s3.amazonaws.com/"
+            resValue "string", "app_id", "227062520981576"
+            resValue "string", "gigya_key", "temp_changes_in_key_3_8ehUrt4CjigIsDDN_k87THt1ssJwU73Pxdr5x6pdt_YDIBTy8OUAuEoy2Nokfc5l"
+            resValue "string", "branch_key", "key_test_fgi8BbNnUhcljBSA5EZXukfbxqewt06R"
+            resValue "string", "branch_prefix", "/hCem"
+            resValue "string", "kochava_key", "koggp-malls----android----dev57223832d9613"
+            resValue "string", "briteverify_url", "https://bpi.briteverify.com/emails.json"
+            resValue "string", "briteverify_key", "80b2f35b-d37d-4e72-8e35-8d51b266923d"
+            resValue "string", "google_maps_key", "AIzaSyAiiNrZRLAiPnwfGBR9FTxlm1pExGUdqpc"
+            resValue "string", "adobe_config_filename", "ADBMobileConfigDev.json"
+            resValue "string", "hello_world_base_url", "http://ggp.review.eprize.com"
+            resValue "string", "hello_world_auth_string", "ZHVzdGluLWR1Y2xvOmdncHN3ZWVwcw=="
+        }
+        qa {
+            applicationId "com.ggp.theclub.qa"
+            resValue "string", "api_base_url", "https://digitalservices-qa.ggp.com/mall-api/"
+            resValue "string", "malls_languages_url", "http://ggp-mobile.s3.amazonaws.com/"
+            resValue "string", "app_id", "227062520981576"
+            resValue "string", "gigya_key", "temp_changes_in_key_3_8ehUrt4CjigIsDDN_k87THt1ssJwU73Pxdr5x6pdt_YDIBTy8OUAuEoy2Nokfc5l"
+            resValue "string", "branch_key", "key_test_fgi8BbNnUhcljBSA5EZXukfbxqewt06R"
+            resValue "string", "branch_prefix", "/hCem"
+            resValue "string", "kochava_key", "koggp-malls----android----dev57223832d9613"
+            resValue "string", "briteverify_url", "https://bpi.briteverify.com/emails.json"
+            resValue "string", "briteverify_key", "80b2f35b-d37d-4e72-8e35-8d51b266923d"
+            resValue "string", "google_maps_key", "AIzaSyAiiNrZRLAiPnwfGBR9FTxlm1pExGUdqpc"
+            resValue "string", "adobe_config_filename", "ADBMobileConfigDev.json"
+            resValue "string", "hello_world_base_url", "http://ggp.review.eprize.com"
+            resValue "string", "hello_world_auth_string", "ZHVzdGluLWR1Y2xvOmdncHN3ZWVwcw=="
+        }
+        prod {
+            applicationId "com.ggp.theclub"
+            resValue "string", "api_base_url", "https://digitalservices.ggp.com/mall-api/"
+            resValue "string", "malls_languages_url", "http://ggp-mobile-prod.s3.amazonaws.com/"
+            resValue "string", "app_id", "227061590981669"
+            resValue "string", "gigya_key", "temp_changes_in_key_3_u1D_-gpgeKX1m78l9YUx3CtJQRbePN2h78JCxEv6yFUS0EBUZ9GcUIiY1WyaYBVb"
+            resValue "string", "branch_key", "key_live_chm4ykNcMigfhxJr9t8XBdcbvBiwA06x"
+            resValue "string", "branch_prefix", "/NCem"
+            resValue "string", "kochava_key", "koggp----android----prod57223945ab3b7"
+            resValue "string", "briteverify_url", "https://bpi.briteverify.com/emails.json"
+            resValue "string", "briteverify_key", "80b2f35b-d37d-4e72-8e35-8d51b266923d"
+            resValue "string", "google_maps_key", "AIzaSyCWpP5nnl7sritwT8l8Nhfh9JtpzhspuEo"
+            resValue "string", "adobe_config_filename", "ADBMobileConfig.json"
+            resValue "string", "hello_world_base_url", "http://ggp.promo.eprize.com"
+            resValue "string", "hello_world_auth_string", ""
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable 'ResourceType'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/LICENSE.txt'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.powermock:powermock-api-mockito:1.6.2'
+    testCompile 'org.powermock:powermock-module-junit4:1.5.6'
+    provided 'org.projectlombok:lombok:1.12.6'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.android.support:design:24.1.1'
+    compile 'com.android.support:support-v4:24.1.1'
+    compile 'com.android.support:support-v13:24.1.1'
+    compile 'com.android.support:cardview-v7:24.1.1'
+    compile 'com.android.support:palette-v7:24.1.1'
+    compile 'com.android.support:recyclerview-v7:24.1.1'
+    compile 'com.android.support:percent:24.1.1'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.2.0'
+    compile 'com.newrelic.agent.android:android-agent:5.7.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.7.0'
+    compile 'com.google.android.gms:play-services-auth:9.4.0'
+    compile 'com.google.android.gms:play-services-ads:9.4.0'
+    compile 'com.google.android.gms:play-services-maps:9.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4.3'
+    compile 'net.sourceforge.streamsupport:streamsupport:1.4.3'
+    compile 'net.sourceforge.streamsupport:streamsupport-cfuture:1.4.3'
+    compile 'net.sourceforge.streamsupport:streamsupport-atomic:1.4.3'
+    compile 'net.sourceforge.streamsupport:streamsupport-flow:1.4.3'
+    compile 'com.google.guava:guava:19.0'
+    compile 'com.googlecode.libphonenumber:libphonenumber:7.0.1'
+    compile 'ca.barrenechea.header-decor:header-decor:0.2.6'
+    compile 'com.jibestream.jibestreamandroidlibrary:jibestreamandroidlibrary:3.3.0'
+//    compile 'com.jibestream.jmapandroidsdk:jmapandroidsdk:5.0.0-rc.12'
+    compile 'commons-collections:commons-collections:3.2.2'
+    compile 'commons-io:commons-io:2.4'
+    compile 'net.danlew:android.joda:2.9.4.1'
+    compile 'io.branch.sdk.android:library:1.+'
+    compile 'com.merhold.extensiblepageindicator:extensiblepageindicator:1.0'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.6'
+    compile 'com.github.clans:fab:1.6.4'
+    compile "com.daimajia.swipelayout:library:1.2.0@aar"
+    compile 'it.sephiroth.android.library.imagezoom:imagezoom:2.2.5'
+    compile 'com.github.deano2390:MaterialShowcaseView:1.1.0@aar'
+    compile 'com.annimon:stream:1.1.7'
+    compile('com.crashlytics.sdk.android:crashlytics:2.6.8@aar') {
+        transitive = true;
+    }
+
+}

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ggp.theclub"
+    android:versionCode="117"
+    android:versionName="4.8.9">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@mipmap/icon_ggp_launcher"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:name=".MallApplication">
+
+        <activity android:name=".activity.SplashActivity"
+                  android:theme="@style/SplashTheme"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/url_scheme" android:host="open"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="bnc.lt" android:pathPrefix="@string/branch_prefix"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.LoadingActivity"
+                  android:theme="@style/LoadingTheme"
+                  android:noHistory="true"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize">
+
+            <meta-data android:name="io.branch.sdk.auto_link_keys" android:value="@string/mall_deeplink_param"/>
+        </activity>
+
+        <activity android:name=".activity.MallSearchSelectActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.MallSearchByNameActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.MallSearchByLocationActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.ChangeMallActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.BenefitsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.OnboardingRegistrationActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.OnboardingLoginActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.OnboardingEmailLoginActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingRegistrationTheme"/>
+
+        <activity android:name=".activity.OnboardingResetPasswordActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingRegistrationTheme"/>
+
+        <activity android:name=".activity.OnboardingEmailRegistrationActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingRegistrationTheme"/>
+
+        <activity android:name=".activity.OnboardingSocialRegistrationActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingRegistrationTheme"/>
+
+        <activity android:name=".activity.OnboardingRegistrationPreferencesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingRegistrationTheme"/>
+
+        <activity android:name=".activity.OnboardingSocialRegistrationPreferencesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingRegistrationTheme"/>
+
+        <activity android:name=".activity.WelcomeActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/OnboardingTheme"/>
+
+        <activity android:name=".activity.MainActivity"
+                  android:windowSoftInputMode="adjustPan"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"
+                  android:theme="@style/MainTheme"/>
+
+        <activity android:name=".activity.TenantActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.SaleActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.SalesListActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.MallEventActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.MovieActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.TenantSearchActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.FiltersActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.RefineActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.RefineTenantActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.RefineSortActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.CategoriesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.ProductTypesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.BrandsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.WayfindActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.TenantMapActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.PromotionMapActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.ParkingMapActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.MallInfoActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.ManageFavoritesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.FeedbackActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.TermsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+        
+        <activity android:name=".activity.WebViewActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountLandingActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountInformationActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountCommunicationPreferencesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountResetPasswordActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountChangePasswordActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountRegistrationActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountSocialRegistrationActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountEmailRegistrationActivity"
+                  android:screenOrientation="portrait"
+                  android:windowSoftInputMode="adjustResize"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountSocialRegistrationPreferencesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountEmailRegistrationPreferencesActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountLoginActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.AccountEmailLoginActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.ParkAssistResultsActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name=".activity.ParkAssistMapActivity"
+                  android:screenOrientation="portrait"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
+        <activity android:name="com.gigya.socialize.android.ui.HostActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"/>
+
+        <activity android:name="com.gigya.socialize.android.login.providers.WebLoginActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:launchMode="singleTask"
+                  android:allowTaskReparenting="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.ggp.theclub" android:host="gsapi"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"
+                  android:label="@string/app_name"
+                  android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"/>
+        <activity android:name=".activity.ChooseLanguageActivity"
+                  android:screenOrientation="portrait"/>
+
+        <receiver android:name=".GGPMallsInstallListener" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".ConnectivityChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_key"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+
+        <service android:name=".customlocale.LocaleService"
+            android:exported="false"
+            />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="739bc7b4c5ee0e244a33de4083570a7d738adf24" />
+    </application>
+</manifest>

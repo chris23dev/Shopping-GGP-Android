@@ -1,0 +1,52 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_space_medium"
+        android:layout_marginLeft="@dimen/standard_space_screen"
+        android:layout_marginRight="@dimen/standard_space_screen"
+        android:layout_marginBottom="@dimen/standard_space_medium"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/garage_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_space_medium"
+            android:textSize="@dimen/size_16"
+            style="@style/Text.Regular"/>
+
+        <TextView
+            android:id="@+id/location_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_18"
+            style="@style/Text.Regular"/>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/map_view_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_space_medium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/size_12"
+            app:backgroundTint="@color/blue"/>
+
+    </LinearLayout>
+
+    <View style="@style/HorizontalDivider"/>
+
+</LinearLayout>

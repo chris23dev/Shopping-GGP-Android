@@ -1,0 +1,55 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_view"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="@dimen/standard_space_medium"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/day_text"
+            android:layout_width="@dimen/space_48"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_space_large"
+            android:textSize="@dimen/size_16"
+            tools:text="Day"
+            />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="@dimen/space_64"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/standard_space_large"
+            android:textSize="@dimen/size_16"
+            android:layout_toRightOf="@id/day_text"
+            android:layout_toEndOf="@id/day_text"
+            tools:text="date"
+            />
+
+        <TextView
+            android:id="@+id/hours_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/size_16"
+            android:layout_toRightOf="@id/date_text"
+            android:layout_toEndOf="@id/date_text"
+            tools:text="hours"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hours_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark_gray"
+        android:textSize="@dimen/size_16"
+        tools:visibility="visible"
+        tools:text="Hours lable"
+        android:visibility="gone"/>
+</LinearLayout>

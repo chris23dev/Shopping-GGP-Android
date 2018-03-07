@@ -1,0 +1,150 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/standard_space_screen"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mall_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space_large"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/size_24"
+                style="@style/Text.Bold"/>
+
+            <LinearLayout
+                android:id="@+id/location_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:layout_marginBottom="@dimen/standard_space_medium"
+                android:background="?selectableItemBackground">
+
+                <TextView
+                    android:text="@string/location_icon"
+                    style="@style/MallInfoIcon"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/address"
+                        style="@style/MallInfoText"/>
+
+                    <TextView
+                        android:id="@+id/city_state_zip"
+                        style="@style/MallInfoText"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|left"
+                android:background="?selectableItemBackground">
+
+                <TextView
+                    android:text="@string/call_icon"
+                    style="@style/MallInfoIcon"/>
+
+                <TextView
+                    android:id="@+id/phone_text"
+                    style="@style/MallInfoText"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hours_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_space_large"
+                android:layout_marginBottom="@dimen/standard_space_medium"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/size_18"
+                style="@style/Text.Bold"/>
+
+            <TextView
+                android:id="@+id/hours_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/size_16"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/hours_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_space_large"/>
+
+            <LinearLayout
+                android:id="@+id/holiday_hours_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_space_large"
+                android:gravity="center_vertical"
+                android:background="?selectableItemBackground"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/holiday_hours_button_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/primary_blue"
+                    style="@style/Text.Medium"/>
+
+                <TextView
+                    android:id="@+id/holiday_hours_arrow_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/standard_space_medium"
+                    android:text="@string/expand_icon"
+                    android:textSize="@dimen/size_22"
+                    android:textColor="@color/gray"
+                    style="@style/Text.Icon"/>
+            </LinearLayout>
+
+            <com.ggp.theclub.view.CustomRecyclerView
+                android:id="@+id/holiday_hours_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_space_small"
+                android:visibility="gone"
+                app:nestedScrollingEnabled="false"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/change_mall_button"
+                style="@style/StandardButton"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

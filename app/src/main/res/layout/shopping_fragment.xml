@@ -1,0 +1,109 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/standard_space_medium"
+            android:paddingRight="@dimen/standard_space_medium"
+            android:paddingLeft="@dimen/standard_space_medium"
+            android:paddingBottom="@dimen/standard_space_medium"
+            android:orientation="vertical">
+
+            <!--Campaign Categories-->
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/black_friday"
+                app:collapsedImage="@drawable/black_friday"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/easter"
+                app:collapsedImage="@drawable/easter"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/holiday"
+                app:collapsedImage="@drawable/holiday"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/valentines"
+                app:collapsedImage="@drawable/valentines"
+                style="@style/ShoppingCategory"/>
+
+
+            <!--Normal Categories-->
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/department_stores"
+                app:collapsedImage="@drawable/department_stores_collapsed"
+                app:expandedImage="@drawable/department_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/electronics"
+                app:collapsedImage="@drawable/electronics_collapsed"
+                app:expandedImage="@drawable/electronics_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/fashion"
+                app:collapsedImage="@drawable/fashion_collapsed"
+                app:expandedImage="@drawable/fashion_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/food"
+                app:collapsedImage="@drawable/food_collapsed"
+                app:expandedImage="@drawable/food_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/beauty"
+                app:collapsedImage="@drawable/beauty_collapsed"
+                app:expandedImage="@drawable/beauty_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/housewares"
+                app:collapsedImage="@drawable/housewares_collapsed"
+                app:expandedImage="@drawable/housewares_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/shoes"
+                app:collapsedImage="@drawable/shoes_collapsed"
+                app:expandedImage="@drawable/shoes_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/specialty"
+                app:collapsedImage="@drawable/specialty_collapsed"
+                app:expandedImage="@drawable/specialty_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/sports"
+                app:collapsedImage="@drawable/sports_collapsed"
+                app:expandedImage="@drawable/sports_expanded"
+                style="@style/ShoppingCategory"/>
+
+            <com.ggp.theclub.view.ExpandableCategoryView
+                android:id="@+id/all"
+                style="@style/ShoppingCategory"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

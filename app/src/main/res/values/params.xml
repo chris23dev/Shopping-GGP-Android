@@ -1,0 +1,4 @@
+<resources>
+    <!--Deeplinking-->
+    <string name="mall_deeplink_param">mallId</string>
+</resources>

@@ -1,0 +1,10 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/month_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/standard_space_small"
+    android:gravity="left"
+    android:textSize="@dimen/size_16"
+    android:textColor="@color/dark_gray"
+    style="@style/Text.Bold"/>

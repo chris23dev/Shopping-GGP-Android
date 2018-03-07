@@ -1,0 +1,225 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_view"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/standard_space_screen"
+            android:paddingTop="@dimen/standard_space_screen">
+
+            <TextView
+                android:id="@+id/current_mall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space_small"
+                android:layout_marginLeft="@dimen/standard_space_screen"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/size_12"/>
+
+            <TextView
+                android:id="@+id/mall_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space_small"
+                android:layout_marginLeft="@dimen/standard_space_screen"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/size_18"/>
+
+            <TextView
+                android:id="@+id/todays_hours_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space_medium"
+                android:layout_marginLeft="@dimen/standard_space_screen"
+                android:gravity="right"
+                android:textColor="@color/medium_gray"
+                android:textSize="@dimen/size_16"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/change_mall_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space_large"
+                android:layout_marginLeft="@dimen/standard_space_screen"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_12"
+                app:backgroundTint="@color/blue"/>
+
+            <View style="@style/HorizontalDivider"/>
+
+            <FrameLayout
+                android:id="@+id/mall_info_button"
+                style="@style/MoreScreenButton">
+
+                <TextView
+                    android:id="@+id/mall_info_button_label"
+                    style="@style/MoreScreenButtonText"/>
+
+                <TextView style="@style/MoreScreenButtonIcon"/>
+            </FrameLayout>
+
+            <View style="@style/HorizontalDivider"/>
+
+            <LinearLayout
+                android:id="@+id/black_friday_hours_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    style="@style/MoreScreenButton">
+
+                    <TextView
+                        android:id="@+id/black_friday_hours"
+                        style="@style/MoreScreenButtonText"/>
+
+                    <TextView style="@style/MoreScreenButtonIcon"/>
+                </FrameLayout>
+
+                <View style="@style/HorizontalDivider"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/unauthenticated_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/login_button"
+                    style="@style/MoreScreenButton"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/more_login_button"
+                        style="@style/MoreScreenButtonText"/>
+
+                    <TextView style="@style/MoreScreenButtonIcon"/>
+                </FrameLayout>
+
+                <View style="@style/HorizontalDivider"
+                      android:visibility="gone"
+                    />
+
+                <FrameLayout
+                    android:id="@+id/register_button"
+                    style="@style/MoreScreenButton"
+                    android:visibility="gone"
+                    >
+
+                    <TextView
+                        android:id="@+id/more_register_button"
+                        style="@style/MoreScreenButtonText"/>
+
+                    <TextView style="@style/MoreScreenButtonIcon"/>
+                </FrameLayout>
+
+                <View style="@style/HorizontalDivider"
+                      android:visibility="gone"
+                    />
+
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/language_button"
+                style="@style/MoreScreenButton"
+                android:visibility="gone"
+                tools:visibility="visible"
+                >
+
+                <TextView
+                    android:id="@+id/more_language_button"
+                    style="@style/MoreScreenButtonText"/>
+
+                <TextView style="@style/MoreScreenButtonIcon"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/authenticated_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:id="@+id/account_landing_button"
+                    style="@style/MoreScreenButton">
+
+                    <TextView
+                        android:id="@+id/more_account_button"
+                        style="@style/MoreScreenButtonText"/>
+
+                    <TextView style="@style/MoreScreenButtonIcon"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <View style="@style/HorizontalDivider"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/standard_space_screen"
+                android:layout_marginRight="@dimen/standard_space_screen"
+                android:layout_marginTop="@dimen/standard_space_screen"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_space_small">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/twitter_button"
+                        style="@style/MoreScreenSocialNetworkButtons"
+                        android:text="@string/twitter_icon"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/instagram_button"
+                        style="@style/MoreScreenSocialNetworkButtons"
+                        android:text="@string/instagram_icon"/>
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/facebook_button"
+                        style="@style/MoreScreenSocialNetworkButtons"
+                        android:text="@string/facebook_icon"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/feedback_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:padding="@dimen/standard_space_small"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="@dimen/size_14"/>
+
+                <TextView
+                    android:id="@+id/privacy_terms_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:padding="@dimen/standard_space_small"
+                    android:textColor="@color/primary_blue"
+                    android:textSize="@dimen/size_14"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

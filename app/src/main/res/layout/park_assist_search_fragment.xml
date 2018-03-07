@@ -1,0 +1,88 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/standard_space_screen"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="@dimen/space_8"
+                android:background="@drawable/circle"
+                android:text="@string/directions_icon"
+                android:textColor="@color/white"
+                android:textSize="@dimen/size_32"
+                app:backgroundTint="@color/gray"
+                style="@style/Text.Icon"/>
+
+            <View
+                android:layout_width="@dimen/space_4"
+                android:layout_height="@dimen/standard_space_large"
+                android:layout_gravity="center"
+                android:background="@color/gray"/>
+
+            <TextView
+                android:id="@+id/park_assist_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_space_medium"
+                android:layout_marginBottom="@dimen/standard_space_medium"
+                android:gravity="center"
+                android:textSize="@dimen/size_28"
+                android:textColor="@color/dark_gray"
+                style="@style/Text.Regular"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:maxLength="10"
+                    android:imeOptions="actionSearch"
+                    android:inputType="textCapCharacters"/>
+
+                <TextView
+                    android:id="@+id/clear_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/standard_space_small"
+                    android:text="@string/cancel_icon"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/gray"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="invisible"
+                    style="@style/Text.Icon"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/message_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/standard_space_large"
+                android:gravity="center"
+                android:textSize="@dimen/size_12"
+                android:textColor="@color/dark_gray"
+                style="@style/Text.Regular"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

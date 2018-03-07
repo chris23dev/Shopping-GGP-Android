@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/blue"/>
+    <size android:width="@dimen/fast_scroller_bubble" android:height="@dimen/fast_scroller_bubble"/>
+    <corners
+        android:topLeftRadius="@dimen/space_32"
+        android:topRightRadius="@dimen/space_32"
+        android:bottomLeftRadius="@dimen/space_32"/>
+</shape>

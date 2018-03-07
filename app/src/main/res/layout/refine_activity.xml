@@ -1,0 +1,55 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/refine_tenant_label"
+                style="@style/RefineLabel" />
+
+            <include layout="@layout/refine_item"
+                     android:id="@+id/refine_tenant_button"/>
+
+            <com.ggp.theclub.view.CustomRecyclerView
+                android:id="@+id/refine_tenant_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:nestedScrollingEnabled="false"/>
+
+            <include layout="@layout/refine_item"
+                     android:id="@+id/refine_reset_button"
+                     android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/refine_sort_label"
+                style="@style/RefineLabel"
+                android:layout_marginTop="@dimen/standard_space_small"/>
+
+            <include layout="@layout/refine_item"
+                     android:id="@+id/refine_sort_button"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,146 @@
+<com.daimajia.swipe.SwipeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_view"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/primary_blue"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/standard_space_medium"
+            android:orientation="horizontal"
+            android:layout_gravity="right|center_vertical">
+
+            <LinearLayout
+                android:id="@+id/favorite_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/standard_space_medium"
+                android:paddingRight="@dimen/standard_space_medium"
+                android:background="?selectableItemBackgroundBorderless"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_28"
+                        android:textColor="@color/white"
+                        android:text="@string/favorite_off_icon"
+                        android:layout_gravity="center"
+                        style="@style/Text.Icon"/>
+
+                    <TextView
+                        android:id="@id/favorite_on"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_28"
+                        android:textColor="@color/red"
+                        android:text="@string/favorite_on_icon"
+                        android:visibility="invisible"
+                        android:layout_gravity="center"
+                        style="@style/Text.Icon"/>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/directory_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_space_small"
+                    android:textColor="@color/white"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navigation_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/standard_space_medium"
+                android:paddingRight="@dimen/standard_space_medium"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_28"
+                    android:textColor="@color/white"
+                    android:text="@string/guide_me_icon"
+                    style="@style/Text.Icon"/>
+
+                <TextView
+                    android:id="@+id/directory_wayfinding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_space_small"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/space_12"
+            android:layout_height="match_parent"
+            android:background="@drawable/tenant_swipe_shadow"
+            android:layout_gravity="left"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/tenant_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:shadowColor="@color/black"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_margin="@dimen/space_8"
+            android:orientation="horizontal">
+
+            <include layout="@layout/logo_small"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_8"
+                android:layout_marginRight="@dimen/space_8"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tenant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/dark_gray_text"
+                    android:textSize="@dimen/size_14"
+                    style="@style/Text.Regular"/>
+
+                <TextView
+                    android:id="@+id/tenant_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/size_12"
+                    style="@style/Text.Regular"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider"/>
+
+    </LinearLayout>
+
+</com.daimajia.swipe.SwipeLayout>

@@ -1,0 +1,115 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/wayfind_toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+    
+    <include layout="@layout/map_layout"/>
+
+    <LinearLayout
+        android:id="@+id/wayfind_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_16"
+            android:background="@drawable/black_bottom_scrim"/>
+
+        <TextView
+            android:id="@+id/disclaimer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_16"
+            android:background="@color/white"
+            android:textSize="@dimen/size_12"
+            style="@style/Text.Regular"/>
+
+        <LinearLayout
+            android:id="@+id/directions_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/previous_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="@dimen/space_8"
+                    android:paddingRight="@dimen/space_8"
+                    android:gravity="center_vertical"
+                    android:text="@string/previous_icon"
+                    android:textSize="@dimen/size_24"
+                    android:textColor="@color/blue"
+                    style="@style/Text.Icon"/>
+
+                <View style="@style/VerticalDivider"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/icon_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="@dimen/space_24"
+                android:layout_marginLeft="@dimen/space_16"
+                android:layout_marginRight="@dimen/space_16"
+                android:layout_marginBottom="@dimen/space_24"
+                android:textSize="@dimen/size_48"
+                style="@style/Text.Icon"/>
+
+            <TextView
+                android:id="@+id/direction_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/size_18"
+                style="@style/Text.Regular"/>
+
+            <TextView
+                android:id="@+id/next_view"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_32"
+                android:layout_marginRight="@dimen/space_32"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/size_11"
+                android:textColor="@color/blue"
+                style="@style/Text.Regular"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/space_32"
+        android:clickable="true"
+        android:src="@drawable/icon_next"
+        android:visibility="gone"
+        app:layout_anchor="@id/directions_layout"
+        app:layout_anchorGravity="top|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>

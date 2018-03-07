@@ -1,0 +1,435 @@
+<resources>
+    <string name="app_name">GGP Malls</string>
+    <string name="url_scheme">ggpmalls</string>
+
+    <!--App Loading Screen-->
+    <string name="invalid_version_dialog_title"><b>App Update Required</b></string>
+    <string name="invalid_version_dialog_text">In order to continue, you must update to the latest version.</string>
+    <string name="invalid_version_dialog_button">Update</string>
+    <string name="splash_header_text">WELCOME!</string>
+    <string name="splash_message_1">GGP Malls puts your local mall</string>
+    <string name="splash_message_2">in the palm of your hand.</string>
+
+    <!--Mall Loading Screen-->
+    <string name="loading_mall">Loading</string>
+
+    <!--Toolbar-->
+    <string name="cancel_text">Cancel</string>
+
+    <!--Pages-->
+    <string name="select_mall_title">Select your mall</string>
+    <string name="mall_search_by_name_title">Search By Name</string>
+    <string name="mall_search_by_location_title">Search By Location</string>
+    <string name="directory_title">Directory</string>
+    <string name="more_title">More</string>
+    <string name="map_title">Map</string>
+    <string name="list_title">List</string>
+    <string name="unauthenticated_home_title">Featured</string>
+    <string name="just_for_you_title">Just for you</string>
+    <string name="events_title">Events</string>
+    <string name="dining_title">Dining</string>
+    <string name="movies_title">Movies</string>
+    <string name="filter_title">Filter</string>
+    <string name="refine_title">Refine</string>
+    <string name="categories_title">Categories</string>
+    <string name="products_title">Products</string>
+    <string name="brands_title">Brands</string>
+    <string name="tenant_map_title">Store Map</string>
+    <string name="account_title">Account</string>
+    <string name="account_information_title">My Information</string>
+    <string name="parking_availability_title">Availability</string>
+    <string name="parking_info_title">Overview</string>
+    <string name="parking_reminder_title">Reminder</string>
+    <string name="parking_assist_title">Find My Car</string>
+    <string name="parking_title">Parking</string>
+    <string name="parking_map_title">Parking Map</string>
+    <string name="feedback_title">Provide feedback</string>
+    <string name="terms_title">Privacy &amp; Terms of Use</string>
+    <string name="shopping_title">Shopping</string>
+    <string name="sale_detail_title">Sale Details</string>
+    <string name="event_title">Event Details</string>
+    <string name="promotion_wayfinding_title">Location</string>
+    <string name="entertainment_title">Entertainment Details</string>
+    <string name="register_title">Create Account</string>
+    <string name="login_title">Log In</string>
+    <string name="manage_favorites_title">Choose Favorites</string>
+
+    <!--Onboarding-->
+    <string name="hello">Hello!</string>
+    <string name="mall_search_select_prompt">Which mall would you like to explore?</string>
+    <string name="search_by_location">Search By Location</string>
+    <string name="search_by_name">Search By Name</string>
+    <string name="switch_malls_later">(Don\'t worry, you can switch malls later)</string>
+    <string name="search_by_name_hint">Mall Name</string>
+    <string name="search_by_location_hint">City or Zip</string>
+    <string name="search_by_gps_hint">My Location</string>
+    <string name="search_by_name_no_results_button">Search By Location</string>
+    <string name="search_by_location_no_results">We\'re sorry, there are no GGP malls within 50 miles of your search</string>
+    <string name="search_by_location_no_results_button">Search By Name</string>
+    <string name="benefits_title_shopping">Shopping</string>
+    <string name="benefits_title_parking">Parking</string>
+    <string name="benefits_title_wayfinding">Wayfinding</string>
+    <string name="benefits_title_jfy">Just For You</string>
+    <string name="benefits_description_shopping">Check out the latest sales and see what\'s new in stores.</string>
+    <string name="benefits_description_parking">Find your way back to your parking spot with drop-pin parking reminders.</string>
+    <string name="benefits_description_wayfinding">Navigate the mall from the palm of your hand with simple Guide Me directions.</string>
+    <string name="benefits_description_jfy">Enjoy personalized recommendations based on your favorite stores &amp; restaurants.</string>
+    <string name="benefits_skip_button">Skip</string>
+    <string name="benefits_create_account_button">Create Account</string>
+    <string name="welcome_message_format">Welcome to\n%1$s,\n%2$s</string>
+
+    <string name="benefits_already_member">Already a member?</string>
+    <string name="benefits_login">Log In</string>
+
+    <!--Directory-->
+    <string name="directory_search_hint">Search by Store or Restaurant</string>
+    <string name="map_loading">Loading Map...</string>
+    <string name="map_error">Error Loading Map!</string>
+    <string name="no_favorites_header_unauthenticated">Want to keep track of your favorite stores and restaurants?</string>
+    <string name="no_favorites_text_unauthenticated">Join GGP Malls to add favorites and enjoy a more customized experience.</string>
+    <string name="no_favorites_header_authenticated">You don\'t have any favorites at this mall.</string>
+    <string name="no_favorites_text_authenticated">To save your favorites, select any store or restaurant in the Directory and tap the heart icon.</string>
+    <string name="directory_favorite">Favorite</string>
+    <string name="directory_wayfinding">Guide Me</string>
+    <string name="filter_showcase_title">Filter by\nProducts &amp; Brands</string>
+    <string name="filter_showcase_text">Our new feature can now help you find stores that carry specific products or brands</string>
+    <string name="filter_showcase_dismiss">GOT IT</string>
+    
+    <!--Shopping-->
+    <string name="refine_tenant_label">FILTER BY STORE:</string>
+    <string name="refine_tenant_default">Select Stores</string>
+    <string name="refine_tenant_change">Change Stores</string>
+    <string name="refine_tenant_reset">Clear All</string>
+    <string name="refine_tenant_favorite">My Favorite Stores</string>
+    <string name="refine_sort_label">SORT BY:</string>
+    <string name="refine_sort_default">Ending Soonest</string>
+    <string name="refine_sort_ascending">Store Name A - Z</string>
+    <string name="refine_sort_descending">Store Name Z - A</string>
+    <string name="filtered_sales_format_default">%1$s Results in %2$s</string>
+    <string name="filtered_sales_format_stores">%1$s Results for %2$s stores</string>
+
+    <!--More Fragment-->
+    <string name="current_mall">Your current mall is</string>
+    <string name="more_hours_open_format">We\'re Open: %s</string>
+    <string name="more_hours_closed_format">Today\'s Hours: %s</string>
+    <string name="more_hours_closed_all_day">Closed Today</string>
+    <string name="more_register_button">Create An Account</string>
+    <string name="mall_info">Mall Info</string>
+    <string name="mall_info_and_holiday_hours">Mall Info &amp; Holiday Hours</string>
+    <string name="black_friday_hours">Black Friday Store Hours</string>
+    <string name="more_login_button">Login</string>
+    <string name="more_account_button">Account</string>
+    <string name="provide_feedback">Provide Feedback</string>
+    <string name="privacy_terms_of_use">Privacy and Terms Of Use</string>
+
+    <!--Mall Info-->
+    <string name="mall_info_hours_header">Hours</string>
+    <string name="mall_info_hours_description">Individual store and restaurant hours vary and may differ from mall hours. Please refer to our directory for more details.</string>
+    <string name="holiday_hours_button">View Holiday Hours</string>
+
+    <!--Brand and Product Search-->
+    <string name="top_disclaimer">Although we do our best to list all retail offerings, the list below may not be comprehensive or reflect all items currently in stock.</string>
+    <string name="brand_bottom_disclaimer">Please note that only a limited number of brands are included in the directory.</string>
+    <string name="brand_search_placeholder">Type brand name</string>
+    <string name="no_brand_results">We\'re sorry, we couldn\'t find that brand.</string>
+    <string name="product_filter_header_format">Now displaying %d stores that carry:</string>
+
+    <!--Categories-->
+    <string name="all_stores_category_label">All Stores</string>
+    <string name="all_sales_category_label">See All Sales &amp; New In Store</string>
+    <string name="my_favorites_category_label">My Favorites</string>
+
+    <!--Events-->
+    <string name="please_check_back">Please Check back at a later time.</string>
+    <string name="no_events">There are currently no events at\n%1$s</string>
+    <string name="join_ggp_event">Join GGP Malls to be the first to know about events.</string>
+
+    <!--Movies-->
+    <string name="hour_abbreviation">hr</string>
+    <string name="minute_abbreviation">min</string>
+    <string name="no_showtimes_today">No showtimes today</string>
+    <string name="tenant_about_header">About</string>
+    <string name="no_movies_message">Sorry, there are no showtimes for this day</string>
+    <string name="select_different_date">Please check back or select another date</string>
+
+    <!--Movie Detail-->
+    <string name="showtimes_header">Showtimes for Today</string>
+    <string name="plot_summary_header">Plot Summary</string>
+    <string name="rating_header">Rating</string>
+    <string name="runtime_header">Runtime</string>
+    <string name="genre_header">Genre</string>
+    <string name="cast_header">Cast</string>
+    <string name="more_info_header">More Info</string>
+    <string name="director_label">Director:</string>
+    <string name="distributor_label">Distributor:</string>
+
+    <!--Mall Select-->
+    <string name="mall_select_location_error">We\'re sorry, there are no GGP malls within 50 miles of you</string>
+    <string name="mall_select_name_error">We\'re sorry, there are no GGP malls matching your search</string>
+    <string name="mall_distance_units">mi</string>
+    <string name="mall_select_header_text">Malls %1$s %2$s</string>
+    <string name="mall_select_header_near">Near</string>
+    <string name="mall_select_header_you">You</string>
+    <string name="recent_malls_header_text">RECENT MALLS</string>
+    <string name="mall_select_legacy_title">We\'re still working on this...</string>
+    <string name="mall_select_legacy_message">%s isn\'t ready to be viewed in our app yet. Please visit the mall website. We apologize for the inconvenience.</string>
+    <string name="change_mall_button">Change Location</string>
+    <string name="mall_select_legacy_right_button">Visit Website</string>
+    <string name="mall_select_dispositioning_title">THIS MALL IS UNDER NEW MANAGEMENT.</string>
+    <string name="mall_select_dispositioning_message">Sorry for the inconvenience. Please click below to search for a GGP mall near you.</string>
+
+    <!--Promotions-->
+    <string name="ongoing">Ongoing</string>
+    <string name="now">Now</string>
+    <string name="today">Today</string>
+
+    <!--Parking Reminder-->
+    <string name="location_disabled_dialog_text"><b>Location Services are disabled</b>\nPlease turn on Location Services so that the map can show your current location</string>
+    <string name="location_disabled_dialog_no">No, Thanks</string>
+    <string name="location_disabled_dialog_yes">Settings</string>
+    <string name="parking_reminder_clear">Clear Reminder</string>
+    <string name="parking_reminder_add_note">Add a note...</string>
+    <string name="parking_reminder_place_pin_button">Place Pin</string>
+    <string name="parking_reminder_saved_message">Spot saved. Enjoy your visit!</string>
+    <string name="saved_reminder_header">Right where you left it.</string>
+    <string name="parking_reminder_save_spot_header">Save your spot</string>
+    <string name="parking_reminder_save_spot_message">Zoom and pan until your current location is in the center of the map</string>
+    <string name="parking_reminder_move_marker_hint">If you would like to move the marker, long press and drag to adjust its position</string>
+    <string name="parking_search_title">FIND NEAREST PARKING</string>
+    <string name="parking_search_description">Find the nearest parking to your store or restaurant.</string>
+    <string name="parking_availability_arrival">Arrival Time</string>
+    <string name="parking_availability_now">Now</string>
+    <string name="parking_availability_morning">Morning</string>
+    <string name="parking_availability_afternoon">Afternoon</string>
+    <string name="parking_availability_evening">Evening</string>
+    <string name="parking_availability_done">Done</string>
+    <string name="parking_availability_proximity">Parking For</string>
+
+    <string name="parking_availability_format">%1$s of %2$s</string>
+    <string name="parking_availability_today_format">This %s</string>
+
+    <!--Tenant-->
+    <string name="tenant_sales_and_events">Sales and Events</string>
+    <string name="call">CALL</string>
+    <string name="reserve">RESERVE</string>
+    <string name="favorite">FAVORITE</string>
+    <string name="wayfind">GUIDE ME</string>
+    <string name="open_table_url_template">http://www.opentable.com/single.aspx?rid=%1$s&amp;rtype=ism&amp;restref=%1$s</string>
+    <string name="tenant_store_opening">NOW OPEN</string>
+    <string name="tenant_today_hours">Today\'s Hours:</string>
+    <string name="tenant_store_hours">Store Hours</string>
+    <string name="parent_tenant_location_prefix">Inside\u0020</string>
+    <string name="get_directions">Get Directions</string>
+    <string name="tenant_search_hint">Select a store or restaurant</string>
+    <string name="temporarily_closed_message">(Temporarily Closed)</string>
+    <string name="product_types_header">What You\'ll Find In Store</string>
+    <string name="tenant_child_location_format">Inside %s</string>
+    <string name="tenant_child_stores_header_format">Stores inside %s</string>
+
+    <!--Home Feed-->
+    <string name="now_open">Now Open</string>
+    <!-- now_open replaced with store_opening -->
+    <string name="store_opening">STORE OPENINGS</string>
+    <string name="up_to_date">You\'re all up to date</string>
+    <string name="add_favorites">Add more favorite retailers from our directory</string>
+    <string name="no_favorites_header">Choose your favorite stores and restaurants to see your personalized Just For You feed.</string>
+    <string name="no_favorites_button">Choose Favorites</string>
+    <string name="no_favorite_sales_header">There are currently no sales at your favorite stores and/or retailers.</string>
+    <string name="no_favorite_sales_button">Choose More Favorites</string>
+
+    <!--Home -->
+    <string name="closed">Closed</string>
+
+    <!--Manage Favorites-->
+    <string name="manage_favorites_input_hint">Search Stores</string>
+
+    <!--Wayfinding-->
+    <string name="wayfinding_end_placeholder">Select store</string>
+    <string name="wayfinding_start_placeholder">Select nearest store</string>
+    <string name="wayfinding_start">from</string>
+    <string name="wayfinding_level">on</string>
+    <string name="wayfinding_end">to</string>
+    <string name="wayfinding_no_results">No Results Found</string>
+    <string name="wayfinding_search_placeholder">Select nearest store</string>
+    <string name="wayfinding_next_step">NEXT STEP</string>
+    <string name="wayfinding_sis_title">You\'re almost there!</string>
+    <string name="wayfinding_sis_message_format">%1$s is located inside %2$s"</string>
+    <string name="wayfinding_disclaimer">*We strive to provide the most accurate directions, however, some information may be inaccurate and you will need to use your judgment and assume any risk concerning your use of these directional services.</string>
+
+    <!--Account-->
+    <string name="facebook_login_text">Log in with Facebook</string>
+    <string name="google_login_text">Log in with Google</string>
+    <string name="or">or</string>
+    <string name="email_login_text">Log in with Email</string>
+    <string name="facebook_register_text">Register with Facebook</string>
+    <string name="google_register_text">Register with Google</string>
+    <string name="email_register_text">Register with Email</string>
+    <string name="login_link_prompt">Already a member?</string>
+    <string name="register_header">Confirmation</string>
+    <string name="register_description">Please confirm or update the information below.</string>
+    <string name="email_input">Email</string>
+    <string name="email_register">Email *</string>
+    <string name="first_name">First Name *</string>
+    <string name="last_name">Last Name *</string>
+    <string name="required_field">* Required Field</string>
+    <string name="sweepstakes_enroll">Yes, enter me in the GGP Malls Sweepstakes. View\u0020</string>
+    <string name="privacy_description">I am at least 13 years old and agree to the\u0020</string>
+    <string name="privacy_link">Privacy Policy</string>
+    <string name="register_button_text">Register</string>
+    <string name="next_button_text">Next</string>
+    <string name="email_error">Please provide your email.</string>
+    <string name="email_format_error">Please enter a valid email address.</string>
+    <string name="account_info_email_exists_error">This email is already registered with GGP Malls. Please enter another email</string>
+    <string name="register_email_exists_error">This email is already registered with GGP Malls. Please log in with your existing account.</string>
+    <string name="email_invalid_error">Please enter a valid email address</string>
+    <string name="first_name_error">Please provide your first name.</string>
+    <string name="last_name_error">Please provide your last name.</string>
+    <string name="terms_error">Please agree to terms.</string>
+    <string name="account_preferences_header">Communication Preferences</string>
+    <string name="email_communications">Send me email communications</string>
+    <string name="sms_alerts">Send me text message alerts</string>
+    <string name="phone_empty_error">Please enter your phone number.</string>
+    <string name="phone_format_error">Please provide a valid phone number.</string>
+    <string name="save_preferences">Save</string>
+    <string name="mobile_phone">Mobile Phone *</string>
+    <string name="text_alert_disclaimer">* Message and data rates may apply. To stop messages at any time, text STOP to 50304. For help at any time, text HELP to 50304. you will receive up to 8 messages a month. Consent is not a condition of purchase. Autodialed messages will be sent to the number provided. Carriers that support this program: alltel, AT&amp;T, Boost, Cellular One, Cellular South, Cincinnati Bell, Sprint, T-Mobile, U.S. Cellular, Verizon Wireless, Virgin Mobile, Bluegrass, Centennial Wireless, ECIT, EKN, Immix, Inland Cellular, Iillinois Valley Cellular, Revol, West Central Wireless.</string>
+    <string name="show_password_text">Show</string>
+    <string name="hide_password_text">Hide</string>
+    <string name="password_input_hint">Password</string>
+    <string name="password_create_hint">Create Password *</string>
+    <string name="retype_password_input_hint">Re-enter Password *</string>
+    <string name="password_length_error_message">Password must be at least 8 characters.</string>
+    <string name="password_empty_error_message">Please enter your password.</string>
+    <string name="retype_password_empty_error_message">Please re-enter your password.</string>
+    <string name="retype_password_match_error_message">Passwords must match.</string>
+    <string name="login_button">Log In</string>
+    <string name="done_button">REGISTER</string>
+    <string name="name_greeting_format">Hello, %1s!</string>
+    <string name="sweepstakes_success_title">Success!</string>
+    <string name="registration_complete_message">You now have access to exclusive offers and promotions, plus sale alerts for your favorite stores.</string>
+    <string name="sweepstakes_registration_complete_message">Congratulations, you\'ve been entered to win a shopping spree at your local GGP mall in the GGP Malls Sweepstakes.</string>
+    <string name="login_invalid_credentials_message">The email or password you entered is invalid. Please verify your information and try again.</string>
+    <string name="invalid_password_error_label">Password not recognized</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password_title">Reset Password</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="current_password_label">Current Password</string>
+    <string name="new_password_label">New Password</string>
+    <string name="submit_button_text">Submit</string>
+    <string name="reset_password_success_dialog_title">Email Sent!</string>
+    <string name="reset_password_success_dialog_message"><big><b>We\'ve sent an email with instructions on how to reset your password.</b></big>\n\nIf you don\'t receive instructions within a few minutes, check your spam folder.</string>
+    <string name="reset_password_no_email_found_dialog_message">That email is not associated with an existing account. Please register now.</string>
+    <string name="reset_password_error_dialog_message">We\'re sorry. Something went wrong. Please re-enter your updates or try again.</string>
+    <string name="reset_password_failure_dialog_dismiss_button_text">Ok</string>
+    <string name="reset_password_success_dialog_dismiss_button_text">Ok Thanks</string>
+    <string name="manage_favorites_button_text">Manage Favorites</string>
+    <string name="my_information_button_text">My Information</string>
+    <string name="communication_preferences_button_text">Communication Preferences</string>
+    <string name="change_password_button_text">Change Password</string>
+    <string name="logout_button_text">Log Out</string>
+    <string name="delete_account_button_text">Delete Account</string>
+    <string name="delete_account_instructions">To delete your account, please visit your account profile on %1$s\'s website.</string>
+    <string name="account_information_disclaimer">Your gender, birthday, and location may have been pre-populated based on the information you have chosen to share with us via social registration.</string>
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="gender_hint">Gender</string>
+    <string name="birthday_hint">Birthday</string>
+    <string name="zip_code_hint">Zip Code</string>
+    <string name="zip_code_error">Please enter a valid zip code</string>
+    <string name="user_save_success">You have successfully updated your account information.</string>
+    <string name="user_save_failure">We\'re sorry. Something went wrong and your account information did not save. Please try again.</string>
+    <string name="discard_dialog_title">You have unsaved changes.</string>
+    <string name="discard_dialog_message">If you leave, your changes will be lost.</string>
+    <string name="discard_dialog_positive">Stay</string>
+    <string name="discard_dialog_negative">Leave</string>
+    <string name="email_additional_info">This is the login for your GGP Malls account</string>
+    <string name="subscription_message_format">You are currently subscribed to messages from %s.</string>
+    <string name="subscription_message_option">more than one mall</string>
+    <string name="subscription_choice">Which mall would you like to hear from most often?</string>
+    <string name="subscription_instruction_format">To receive updates from %s, please visit the website.</string>
+    <string name="create_account">CREATE AN ACCOUNT</string>
+    <string name="keep_track">Want to keep track of your favorite\nstores and restaurants?</string>
+    <string name="join_ggp">Join GGP Malls to add favorites and enjoy a more customized experience.</string>
+    <string name="sweepstakes_register_text">Register now to enter the GGP Malls sweepstakes for a chance to win a $1,000 shopping spree.</string>
+    <string name="view_terms_label">View</string>
+    <string name="terms_conditions_label">Terms and Conditions</string>
+    <string name="account_issues_message">If you have any questions or issues with your GGP Malls account, please email\u0020</string>
+    <string name="account_issues_email">accountsupport@ggp.com</string>
+
+    <!-- Sharing -->
+    <string name="share_text">Share with</string>
+    <string name="share_subject_format">%1$s | %2$s</string>
+    <string name="share_subject_format_movie">%1$s</string>
+    <string name="sale_share_format">%1$s | %2$s %3$s/en/shopping/sales/sale-%4$s.html</string>
+    <string name="movie_share_format">%1$s %2$s/en/movies/movie-%3$s.html</string>
+    <string name="event_share_format">%1$s | %2$s %3$s/en/events/event-%4$s.html</string>
+
+    <!--Other-->
+    <string name="ellipsis">...</string>
+    <string name="dismiss_alert">Close</string>
+    <string name="done_alert">Done</string>
+    <string name="generic_error">We\'re sorry. Something went wrong. Please try again.</string>
+    <string name="connection_error">No connection. Some features may not be available.</string>
+    <string name="park_near_text">Park near</string>
+    <string name="near_text">near</string>
+    <string name="count_format">(%d)</string>
+
+    <!--Feedback-->
+    <string name="feedback_text"><b>Are you enjoying your app experience?</b></string>
+    <string name="feedback_yes_button">Yes</string>
+    <string name="feedback_no_button">No</string>
+    <string name="dislike_app_text"><b>We\'re sorry.</b>\nIf you have a second we\'d love to learn how we can make your experience better.</string>
+    <string name="dislike_app_yes_button">Give Feedback</string>
+    <string name="feedback_next_no_button">No, Thanks</string>
+    <string name="like_app_text"><b>Thank you!</b>\nWe really appreciate the feedback.\nWould you mind taking a moment to rate the app?</string>
+    <string name="like_app_yes_button">Rate Now</string>
+    <string name="like_app_remind_button">Remind Me\nLater</string>
+
+    <!--Date Selector-->
+    <string name="today_text">TODAY</string>
+
+    <!--Popup menu-->
+    <string name="popup_share">Share</string>
+    <string name="popup_wayfinding">Guide me</string>
+    <string name="popup_store_details">View store details</string>
+
+    <!--Amenities-->
+    <string name="amenity_restroom_label">Restrooms</string>
+    <string name="amenity_atm_label">ATMs</string>
+    <string name="amenity_kiosk_label">Kiosks</string>
+    <string name="amenity_management_label">Management</string>
+    <!--Sweepstakes-->
+    <string name="sweepstakes_terms_link">http://bit.ly/app-sweeps</string>
+
+    <!--Account Information-->
+    <string-array name="account_gender_values">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Unspecified</item>
+    </string-array>
+
+    <!--Google Maps-->
+    <string name="google_maps_base_url">"https://www.google.com/maps/"</string>
+    <string name="google_maps_search_format">"search/%1$s+%2$s"</string>
+    <string name="google_maps_place_format">"place/%1$f,%2$f"</string>
+
+    <!--Park Assist-->
+    <string name="park_assist_header">The easiest way to\nfind your car.</string>
+    <string name="park_assist_hint">Enter License Plate*</string>
+    <string name="park_assist_disclaimer">*Must enter at least 3 characters</string>
+    <string name="park_assist_error_format">No results matching \'%s\'. Please try again.</string>
+    <string name="park_assist_results_title">Search Results</string>
+    <string name="park_assist_results_format">%1$d results matching \'%2$s\'</string>
+    <string name="park_assist_levels_instruction">See availability by level</string>
+    <string name="park_assist_spaces_occupied">Spaces Occupied</string>
+    <string name="park_assist_spaces_available">Spaces Available</string>
+    <string name="park_assist_spaces_full">FULL</string>
+    <string name="park_assist_map_title">Map View</string>
+    <string name="language_settings_title">Language Settings</string>
+
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="there_is_no_language">There is no language!</string>
+    <string name="now_open_tenant_time">Now open</string>
+    <string name="edit_title">Edit</string>
+    <string name="edit_subtitle">Mall</string>
+</resources>

@@ -1,0 +1,60 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/standard_space_screen"
+    android:layout_marginLeft="@dimen/standard_space_screen"
+    android:layout_marginRight="@dimen/standard_space_screen"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/facebook_account_button"
+        android:layout_marginBottom="@dimen/standard_space_large"
+        style="@style/LargeButton">
+
+        <TextView
+            android:text="@string/facebook_icon"
+            android:textColor="@color/white"
+            style="@style/LargeButtonIcon"/>
+
+        <TextView
+            android:id="@+id/facebook_button_label"
+            android:textColor="@color/white"
+            style="@style/LargeButtonLabel"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/google_account_button"
+        android:layout_marginBottom="@dimen/standard_space_large"
+        style="@style/LargeButton">
+
+        <ImageView
+            android:src="@drawable/google_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_24"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/google_button_label"
+            android:textColor="@color/dark_gray"
+            style="@style/LargeButtonLabel"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/email_account_button"
+        style="@style/LargeButton">
+
+        <TextView
+            android:text="@string/email_icon"
+            android:textColor="@color/dark_gray"
+            style="@style/LargeButtonIcon"/>
+
+        <TextView
+            android:id="@+id/email_button_label"
+            android:textColor="@color/dark_gray"
+            style="@style/LargeButtonLabel"/>
+
+    </FrameLayout>
+</LinearLayout>

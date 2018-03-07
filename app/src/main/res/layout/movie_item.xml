@@ -1,0 +1,89 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movie_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/standard_space_medium"
+    android:layout_marginLeft="@dimen/standard_space_medium"
+    android:layout_marginRight="@dimen/standard_space_medium"
+    android:orientation="vertical"
+    android:foreground="?selectableItemBackground"
+    android:elevation="@dimen/size_24">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/standard_space_medium">
+
+        <ImageView
+            android:id="@+id/movie_image"
+            android:layout_width="@dimen/movie_item_image_width"
+            android:layout_height="@dimen/movie_item_image_height"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/alignment_adjust"
+            android:layout_marginLeft="@dimen/standard_space_medium"
+            android:layout_marginRight="@dimen/standard_space_large"
+            android:layout_toRightOf="@id/movie_image"
+            android:layout_alignTop="@id/movie_image"
+            android:textSize="@dimen/size_16"
+            android:textColor="@color/dark_gray"
+            style="@style/Text.Medium" />
+
+        <TextView
+            android:id="@+id/movie_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_space_small"
+            android:layout_marginLeft="@dimen/standard_space_medium"
+            android:layout_marginRight="@dimen/standard_space_large"
+            android:layout_toRightOf="@id/movie_image"
+            android:layout_below="@id/movie_title"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/gray"
+            style="@style/Text.Medium" />
+
+        <TextView
+            android:id="@+id/movie_runtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_space_medium"
+            android:layout_marginRight="@dimen/standard_space_large"
+            android:layout_toRightOf="@id/movie_image"
+            android:layout_below="@id/movie_rating"
+            android:textSize="@dimen/size_12"
+            android:textColor="@color/gray"
+            style="@style/Text.Medium" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/theater_showtimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_space_medium"
+            android:paddingLeft="@dimen/alignment_adjust"
+            android:layout_toRightOf="@id/movie_image"
+            android:layout_below="@id/movie_runtime"
+            android:textSize="@dimen/size_12"
+            android:columnCount="3"
+            style="@style/Text.Medium" />
+
+        <TextView
+            android:id="@+id/no_showtimes_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_space_medium"
+            android:layout_marginLeft="@dimen/standard_space_medium"
+            android:layout_marginRight="@dimen/standard_space_large"
+            android:layout_toRightOf="@id/movie_image"
+            android:layout_below="@id/movie_showtimes"
+            android:textSize="@dimen/size_12"
+            android:visibility="gone"
+            style="@style/Text.Light"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

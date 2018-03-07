@@ -1,0 +1,95 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <View
+            android:id="@+id/focus_thief"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_space_screen"
+            android:layout_marginRight="@dimen/standard_space_screen"
+            android:layout_marginTop="@dimen/standard_space_medium">
+
+            <EditText
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:paddingLeft="@dimen/standard_space_screen"
+                android:textSize="@dimen/size_16"
+                android:textColorHint="@color/medium_gray"
+                android:imeOptions="actionDone"/>
+
+            <TextView
+                android:id="@+id/magnifying_glass_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/standard_space_small"
+                android:paddingRight="@dimen/standard_space_small"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/medium_gray"
+                android:text="@string/magnifying_glass_icon"
+                android:layout_gravity="left|center_vertical"
+                style="@style/Text.Icon"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_16"
+            android:layout_marginRight="@dimen/standard_space_screen"
+            android:layout_marginBottom="@dimen/standard_space_medium"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/refine_tenant_label"
+                style="@style/RefineLabel"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/refine_reset_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_16"
+                android:gravity="center"
+                android:background="?selectableItemBackground"
+                android:textColor="@color/blue"
+                style="@style/Text.Regular"/>
+
+        </LinearLayout>
+
+        <View style="@style/HorizontalDivider"/>
+
+        <com.ggp.theclub.view.CustomRecyclerView
+            android:id="@+id/search_results_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <include layout="@layout/no_results_layout"/>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

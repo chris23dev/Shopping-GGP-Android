@@ -1,0 +1,159 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/standard_space_screen"
+            android:layout_marginRight="@dimen/standard_space_screen"
+            android:layout_marginTop="@dimen/standard_space_medium"
+            android:paddingBottom="@dimen/standard_space_screen"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/focus_thief"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/mall_select_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/standard_space_screen"
+                    android:paddingRight="@dimen/standard_space_screen"
+                    android:textSize="@dimen/size_20"
+                    android:textColorHint="@color/light_gray"
+                    android:imeOptions="actionDone"/>
+
+                <TextView
+                    android:id="@+id/magnifying_glass_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/standard_space_small"
+                    android:paddingRight="@dimen/standard_space_small"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/light_gray"
+                    android:text="@string/magnifying_glass_icon"
+                    android:layout_gravity="left|center_vertical"
+                    style="@style/Text.Icon"/>
+
+                <TextView
+                    android:id="@+id/clear_search_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_icon"
+                    android:textSize="@dimen/size_20"
+                    android:textColor="@color/light_gray"
+                    android:layout_gravity="right|center_vertical"
+                    android:visibility="gone"
+                    style="@style/Text.Icon"/>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/search_result_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/search_result_header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_space_large"
+                    android:layout_marginBottom="@dimen/standard_space_large"
+                    android:textColor="@color/white"
+                    android:gravity="left|bottom"
+                    android:textSize="@dimen/size_16"
+                    style="@style/Text.Medium"/>
+
+                <View style="@style/HorizontalDivider"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/no_mall_search_results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/standard_space_large"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/no_results_message"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/standard_space_medium"/>
+                <TextView
+                    android:id="@+id/no_results_button"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/size_16"
+                    android:textColor="@color/primary_blue"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mall_results_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/recent_malls_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/recent_malls_header_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_space_large"
+                    android:layout_marginBottom="@dimen/standard_space_large"
+                    android:gravity="left"
+                    android:textSize="@dimen/size_16"
+                    style="@style/Text.Medium"/>
+
+                <View style="@style/HorizontalDivider"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recent_malls_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

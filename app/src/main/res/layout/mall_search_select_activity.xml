@@ -1,0 +1,119 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@drawable/diamond_background"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/hello_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_space_small"
+            style="@style/OnboardingBold"/>
+
+        <TextView
+            android:id="@+id/select_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_space_medium"
+            style="@style/OnboardingRegular"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/standard_space_large">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/search_by_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/standard_space_screen"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_blue"
+                        android:text="@string/location_icon"
+                        android:textSize="@dimen/size_32"
+                        android:layout_marginRight="@dimen/standard_space_medium"
+                        style="@style/Text.Icon"/>
+
+                    <TextView
+                        android:id="@+id/search_by_location_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/OnboardingBold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_by_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/primary_blue"
+                        android:text="@string/name_card_icon"
+                        android:textSize="@dimen/size_32"
+                        android:layout_marginRight="@dimen/standard_space_medium"
+                        style="@style/Text.Icon"/>
+
+                    <TextView
+                        android:id="@+id/search_by_name_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/OnboardingBold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <View style="@style/MallSelectDivider"/>
+
+                <TextView
+                    android:id="@+id/or"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/standard_space_small"
+                    android:layout_marginRight="@dimen/standard_space_small"
+                    android:layout_marginBottom="2dp"
+                    style="@style/OnboardingRegular"/>
+
+                <View style="@style/MallSelectDivider"/>
+            </LinearLayout>
+            
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/malls_latter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/medium_gray"
+            android:textSize="@dimen/size_14" />
+
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

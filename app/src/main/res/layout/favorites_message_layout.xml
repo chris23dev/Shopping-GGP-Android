@@ -1,0 +1,47 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:clickable="true"
+    android:padding="@dimen/space_32">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/space_20"
+        android:text="@string/favorite_on_icon"
+        android:textSize="128sp"
+        android:textColor="@color/gray"
+        style="@style/Text.Icon"/>
+
+    <TextView
+        android:id="@+id/favorites_message_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size_20"
+        android:textSize="@dimen/size_18"
+        style="@style/Text.Bold"/>
+
+    <TextView
+        android:id="@+id/favorites_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/size_20"
+        android:textSize="@dimen/size_14"
+        style="@style/Text.Bold"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/size_10"
+        android:textColor="@color/blue"
+        android:visibility="gone"
+        style="?attr/borderlessButtonStyle"/>
+
+</LinearLayout>

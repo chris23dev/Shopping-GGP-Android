@@ -1,0 +1,143 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/home_feed_alert"/>
+
+                <include layout="@layout/home_feed_hours"/>
+
+                <com.ggp.theclub.view.CustomRecyclerView
+                    android:id="@+id/single_sale_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:loadingViewEnabled="true"
+                    app:nestedScrollingEnabled="false"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_space_extra_small"
+                    android:layout_marginBottom="@dimen/standard_space_extra_small"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/no_favorite_sales_message"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:padding="@dimen/home_feed_item_padding"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/no_favorite_sales_header"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/standard_space_medium"
+                            android:textSize="@dimen/size_18"
+                            android:gravity="center"
+                            android:textColor="@color/dark_gray"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/standard_space_medium"
+                            android:textSize="@dimen/size_32"
+                            android:textColor="@color/red"
+                            android:text="@string/favorite_on_icon"
+                            style="@style/Text.Icon"/>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/no_favorite_sales_button"
+                            android:layout_marginTop="0dp"
+                            style="@style/StandardButton"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <include layout="@layout/home_feed_tenants_openings"/>
+
+                <include layout="@layout/home_feed_featured_content"/>
+
+                <com.ggp.theclub.view.CustomRecyclerView
+                    android:id="@+id/events_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:loadingViewEnabled="true"
+                    app:nestedScrollingEnabled="false"/>
+
+                <com.ggp.theclub.view.CustomRecyclerView
+                    android:id="@+id/remaining_sales_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:paddingBottom="@dimen/standard_space_extra_small"
+                    app:clipToPadding="false"
+                    app:loadingViewEnabled="true"
+                    app:nestedScrollingEnabled="false"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="@color/dark_gray"
+                    android:padding="@dimen/standard_space_medium"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/standard_space_medium"
+                        android:orientation="horizontal">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/check_icon"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="@dimen/size_22"
+                            android:background="@drawable/circle"
+                            app:backgroundTint="@color/light_gray"
+                            android:layout_marginRight="@dimen/standard_space_small"
+                            style="@style/Text.Icon"/>
+
+                        <TextView
+                            android:id="@+id/up_to_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/size_16"
+                            android:textColor="@color/light_gray"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/add_favorites"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/size_16"
+                        android:textColor="@color/light_gray"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

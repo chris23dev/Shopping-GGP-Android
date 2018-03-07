@@ -1,0 +1,283 @@
+[
+    {
+        "id": 1,
+        "store": {
+            "id": 1,
+            "name": "ALDO",
+            "placeWiseRetailerId": 1
+
+        },
+        "categories": [
+            {
+                "id": 6,
+                "code": "SHOES"
+            }
+        ],
+        "campaignCategories": [
+            {
+                "id": 70,
+                "code": "VALENTINES"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Jun 15, 2016 6:00:00 PM"
+    },
+    {
+        "id": 2,
+        "store": {
+            "id": 2,
+            "name": "THE CONTAINER STORE",
+            "placeWiseRetailerId": 2
+        },
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "endDateTime": "Jun 15, 2016 11:59:00 PM"
+    },
+    {
+        "id": 3,
+        "store": {
+            "id": 2,
+            "name": "THE CONTAINER STORE",
+            "placeWiseRetailerId": 2
+        },
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "endDateTime": "Jun 1, 2016 6:00:00 PM"
+    },
+    {
+        "id": 4,
+        "store": {
+            "id": 4,
+            "name": "SUBWAY"
+        },
+        "categories": [
+            {
+                "id": 3,
+                "code": "FOOD"
+            },
+            {
+                "id": 17,
+                "code": "QUICK_SERVICE_RESTAURANTS",
+                "parentId": 3
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Jul 1, 2016 8:00:00 PM"
+    },
+    {
+        "id": 5,
+        "store": {
+            "id": 5,
+            "name": "GAP"
+        },
+        "categories": [
+            {
+                "id": 12,
+                "code": "CHILDRENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 1,
+                "code": "FASHION"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Jun 15, 2016 9:00:00 PM"
+    },
+    {
+        "id": 6,
+        "store": {
+            "id": 5,
+            "name": "GAP"
+        },
+        "categories": [
+            {
+                "id": 12,
+                "code": "CHILDRENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 1,
+                "code": "FASHION"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Jun 30, 2016 11:59:00 PM"
+    },
+    {
+        "id": 7,
+        "store": {
+            "id": 5,
+            "name": "GAP"
+        },
+        "categories": [
+            {
+                "id": 12,
+                "code": "CHILDRENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 1,
+                "code": "FASHION"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Jun 30, 2016 6:00:00 PM"
+    },
+    {
+        "id": 8,
+        "store": {
+            "id": 8,
+            "name": "J.JILL"
+        },
+        "categories": [
+            {
+                "id": 1,
+                "code": "FASHION"
+            },
+            {
+                "id": 14,
+                "code": "MENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 15,
+                "code": "WOMENS_CLOTHING",
+                "parentId": 1
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Jun 2, 2016 6:00:00 PM"
+    },
+    {
+        "id": 9,
+        "store": {
+            "id": 9,
+            "name": "STARBUCKS"
+        },
+        "categories": [
+            {
+                "id": 3,
+                "code": "FOOD"
+            },
+            {
+                "id": 19,
+                "code": "SNACKS_DRINKS",
+                "parentId": 3
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Sep 1, 2016 8:00:00 PM"
+    },
+    {
+        "id": 10,
+        "store": {
+            "id": 10,
+            "name": "MACY'S"
+        },
+        "categories": [],
+        "topRetailer": true,
+        "endDateTime": "Jun 15, 2016 9:00:00 PM"
+    },
+    {
+        "id": 11,
+        "store": {
+            "id": 11,
+            "name": "CARDTRONICS (ATM)"
+        },
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Dec 25, 2016 9:00:00 PM"
+    },
+    {
+        "id": 12,
+        "store": {
+            "id": 12,
+            "name": "CARDTRONICS (ATM)"
+        },
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "topRetailer": true,
+        "endDateTime": "Dec 26, 2016 9:00:00 PM"
+    },
+    {
+        "id": 13,
+        "store": {
+            "id": 0,
+            "name": "ZARA"
+        },
+        "categories": [],
+        "endDateTime": "Dec 27, 2016 9:00:00 PM"
+    },
+    {
+        "id": 14,
+        "store": {
+            "id": 0,
+            "name": "ZARA"
+        },
+        "categories": [],
+        "endDateTime": "Dec 28, 2016 9:00:00 PM"
+    },
+    {
+        "id": 15,
+        "categories": [],
+        "endDateTime": "Dec 31, 2016 9:00:00 PM"
+    }
+]

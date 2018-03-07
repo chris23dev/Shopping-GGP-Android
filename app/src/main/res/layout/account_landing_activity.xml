@@ -1,0 +1,162 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/account_landing_header">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/account_landing"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/space_32"
+                    android:paddingLeft="@dimen/space_16"
+                    android:paddingRight="@dimen/space_16"
+                    android:paddingBottom="@dimen/space_24"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/logo_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:visibility="invisible">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/logo_text_view"
+                            android:layout_width="@dimen/account_text_logo"
+                            android:layout_height="@dimen/account_text_logo"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:textSize="@dimen/size_64"
+                            android:textColor="@color/blue"
+                            android:background="@drawable/circle"
+                            app:backgroundTint="@color/white"
+                            style="@style/Text.Bold"/>
+
+                        <ImageView
+                            android:id="@+id/logo_image_view"
+                            android:layout_width="@dimen/account_image_logo"
+                            android:layout_height="@dimen/account_image_logo"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/greeting_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_12"
+                        android:layout_marginBottom="@dimen/space_16"
+                        android:gravity="center_horizontal"
+                        android:textSize="@dimen/size_24"
+                        android:textColor="@color/white"
+                        style="@style/Text.Medium"/>
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/manage_favorites"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="@dimen/space_16"
+                        android:paddingRight="@dimen/space_16"
+                        android:textSize="@dimen/size_16"
+                        android:textColor="@color/blue"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@color/white"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/my_information_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_16"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/size_16"
+                style="@style/Text.Regular"/>
+
+            <View style="@style/HorizontalDivider"/>
+
+            <LinearLayout
+                android:id="@+id/communication_preferences_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/communication_preferences_button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_16"
+                    android:background="?selectableItemBackground"
+                    android:textSize="@dimen/size_16"
+                    style="@style/Text.Regular"/>
+
+                <View style="@style/HorizontalDivider"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/change_password_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/change_password_button_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/space_16"
+                    android:background="?selectableItemBackground"
+                    android:textSize="@dimen/size_16"
+                    style="@style/Text.Regular"/>
+
+                <View style="@style/HorizontalDivider"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space_16"
+                android:background="?selectableItemBackground"
+                android:textSize="@dimen/size_16"
+                android:textColor="@color/dark_gray"
+                style="@style/Text.Regular"/>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

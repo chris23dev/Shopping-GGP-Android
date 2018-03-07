@@ -1,0 +1,89 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/home_feed_alert"/>
+
+                <include layout="@layout/home_feed_hours"/>
+
+                <include layout="@layout/home_feed_tenants_openings"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/standard_space_extra_small"
+                    android:layout_marginBottom="@dimen/standard_space_extra_small"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="0dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/home_feed_item_padding"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:text="@string/favorite_on_icon"
+                            style="@style/CardIcon"/>
+
+                        <TextView
+                            android:id="@+id/keep_track"
+                            android:textColor="?android:attr/textColorPrimary"
+                            style="@style/CardText"/>
+
+                        <TextView
+                            android:id="@+id/join_ggp"
+                            android:textStyle="normal"
+                            style="@style/CardText"/>
+
+                        <android.support.v7.widget.AppCompatButton
+                            android:id="@+id/register_button"
+                            android:layout_marginTop="@dimen/standard_space_large"
+                            style="@style/StandardButton"/>
+
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <com.ggp.theclub.view.CustomRecyclerView
+                    android:id="@+id/single_sale_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:loadingViewEnabled="true"
+                    app:nestedScrollingEnabled="false"/>
+
+                <include layout="@layout/home_feed_featured_content"/>
+
+                <com.ggp.theclub.view.CustomRecyclerView
+                    android:id="@+id/remaining_sales_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:paddingBottom="@dimen/standard_space_extra_small"
+                    app:clipToPadding="false"
+                    app:loadingViewEnabled="true"
+                    app:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</android.support.design.widget.CoordinatorLayout>

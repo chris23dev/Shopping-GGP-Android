@@ -1,0 +1,11 @@
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mall_hours"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/standard_space_medium"
+    android:gravity="center"
+    android:textAllCaps="true"
+    android:textSize="@dimen/size_18"
+    android:textColor="@color/black"
+    android:background="@color/light_gray"/>

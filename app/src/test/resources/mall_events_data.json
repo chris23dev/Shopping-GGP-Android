@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "mappings": [
+            {
+                "storeIds": [
+                    1, 5
+                ]
+            }
+        ],
+        "endDateTime": "Jun 15, 2016 6:00:00 PM"
+    },
+    {
+        "id": 2,
+        "mappings": [
+            {
+                "storeIds": [
+                    2
+                ]
+            }
+        ],
+        "endDateTime": "Jun 15, 2016 11:59:00 PM"
+    },
+    {
+        "id": 3,
+        "mappings": [
+            {
+                "storeIds": []
+            }
+        ],
+        "endDateTime": "Jun 1, 2016 6:00:00 PM"
+    },
+    {
+        "id": 4,
+        "mappings": [
+            {
+                "storeIds": [
+                    3
+                ]
+            }
+        ],
+        "endDateTime": "Jul 1, 2016 8:00:00 PM"
+    },
+    {
+        "id": 5,
+        "mappings": [
+            {
+                "storeIds": [
+                    3
+                ]
+            }
+        ],
+        "endDateTime": "Jun 15, 2016 9:00:00 PM"
+    },
+    {
+        "id": 6,
+        "mappings": [
+            {
+                "storeIds": []
+            }
+        ],
+        "endDateTime": "Jun 30, 2016 11:59:00 PM"
+    },
+    {
+        "id": 7,
+        "mappings": [
+            {
+                "storeIds": []
+            }
+        ],
+        "endDateTime": "Jun 30, 2016 6:00:00 PM"
+    },
+    {
+        "id": 8,
+        "mappings": [
+            {
+                "storeIds": []
+            }
+        ],
+        "endDateTime": "Jun 2, 2016 6:00:00 PM"
+    },
+    {
+        "id": 9,
+        "mappings": [
+            {
+                "storeIds": [
+                    2
+                ]
+            }
+        ],
+        "endDateTime": "Sep 1, 2016 8:00:00 PM"
+    },
+    {
+        "id": 10,
+        "mappings": [
+            {
+                "storeIds": []
+            }
+        ],
+        "endDateTime": "Jun 15, 2016 9:00:00 PM"
+    }
+]

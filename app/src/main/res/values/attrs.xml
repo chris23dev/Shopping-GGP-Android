@@ -1,0 +1,31 @@
+<resources>
+    <declare-styleable name="CustomRecyclerView">
+        <attr name="paddingTop" format="dimension"/>
+        <attr name="paddingLeft" format="dimension"/>
+        <attr name="paddingRight" format="dimension"/>
+        <attr name="paddingBottom" format="dimension"/>
+        <attr name="clipToPadding" format="boolean"/>
+        <attr name="nestedScrollingEnabled" format="boolean"/>
+        <attr name="hasFixedSize" format="boolean"/>
+        <attr name="reversedLayout" format="boolean"/>
+        <attr name="layoutOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="fastScrollerEnabled" format="boolean"/>
+        <attr name="loadingViewEnabled" format="boolean"/>
+        <attr name="loadingViewColor" format="color"/>
+        <attr name="loadingViewPosition" format="enum">
+            <enum name="left" value="9"/>
+            <enum name="top" value="10"/>
+            <enum name="right" value="11"/>
+            <enum name="bottom" value="12"/>
+            <enum name="center" value="13"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableCategoryView">
+        <attr name="collapsedImage" format="reference"/>
+        <attr name="expandedImage" format="reference"/>
+    </declare-styleable>
+</resources>

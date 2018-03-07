@@ -1,0 +1,114 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <!--Collapsing Header-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <com.ggp.theclub.view.CustomRecyclerView
+                android:id="@+id/theater_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/light_gray"
+                android:paddingTop="@dimen/standard_space_medium"
+                app:clipToPadding="false"/>
+
+            <include layout="@layout/theater_header"/>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+        <!--End Collapsing Header-->
+
+        <!--Calendar Ribbon-->
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/calendar_ribbon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/date_picker_height"
+            android:visibility="gone"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin">
+
+            <com.ggp.theclub.view.CustomRecyclerView
+                android:id="@+id/date_selector"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:nestedScrollingEnabled="false"
+                app:layoutOrientation="horizontal"/>
+
+            <View style="@style/VerticalDivider"/>
+
+        </android.support.v7.widget.Toolbar>
+        <!--End Calendar Ribbon-->
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_gray"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.ggp.theclub.view.CustomRecyclerView
+            android:id="@+id/movie_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/light_gray"
+            app:paddingTop="@dimen/standard_space_medium"
+            app:clipToPadding="false"
+            app:loadingViewEnabled="true"
+            app:loadingViewColor="@color/white"
+            app:loadingViewPosition="top"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <LinearLayout
+            android:id="@+id/no_movies_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/space_24"
+            android:layout_marginLeft="@dimen/space_32"
+            android:layout_marginRight="@dimen/space_32"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/space_72"
+                android:textColor="@color/medium_gray"
+                android:text="@string/movies_icon"
+                style="@style/Text.Icon"/>
+
+            <TextView
+                android:id="@+id/no_movies_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_12"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/space_18"
+                android:textColor="@color/medium_gray"
+                style="@style/Text.Bold"/>
+
+            <TextView
+                android:id="@+id/select_different_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/space_12"
+                android:textColor="@color/medium_gray"/>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,50 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/theater_header"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foreground="?selectableItemBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/standard_space_medium"
+        android:layout_marginLeft="@dimen/standard_space_screen"
+        android:layout_marginRight="@dimen/standard_space_screen">
+
+        <TextView
+            android:id="@+id/text_logo"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/size_24"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:adjustViewBounds="true"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/theater_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/standard_space_medium"
+        android:layout_marginBottom="@dimen/standard_space_small"
+        android:textColor="@color/dark_gray"
+        android:gravity="center"
+        android:textSize="14dp"
+        style="@style/Text.Bold"/>
+
+    <TextView
+        android:id="@+id/theater_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/standard_space_medium"
+        android:gravity="center"
+        android:textSize="12dp"
+        style="@style/Text.Light" />
+</LinearLayout>

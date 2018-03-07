@@ -1,0 +1,58 @@
+<com.github.clans.fab.FloatingActionMenu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filter_fab"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/standard_space_large"
+    android:layout_gravity="bottom|right"
+    fab:menu_backgroundColor="@android:color/transparent"
+    fab:menu_buttonSpacing="0dp"
+    fab:menu_colorNormal="@color/blue"
+    fab:menu_colorPressed="@color/blue"
+    fab:menu_fab_label=""
+    fab:menu_fab_size="normal"
+    fab:menu_icon="@drawable/icon_filter"
+    fab:menu_labels_colorNormal="#333"
+    fab:menu_labels_colorPressed="#444"
+    fab:menu_labels_colorRipple="#66efecec"
+    fab:menu_labels_cornerRadius="3dp"
+    fab:menu_labels_ellipsize="none">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/management_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_management"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/light_gray"
+        fab:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/kiosk_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_kiosk"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/light_gray"
+        fab:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/atm_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_atm"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/light_gray"
+        fab:fab_size="mini" />
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/restroom_filter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_restroom"
+        fab:fab_colorNormal="@color/white"
+        fab:fab_colorPressed="@color/light_gray"
+        fab:fab_size="mini" />
+
+</com.github.clans.fab.FloatingActionMenu>

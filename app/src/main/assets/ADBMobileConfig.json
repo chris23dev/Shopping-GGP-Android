@@ -1,0 +1,35 @@
+{
+  "lastModified": "2015-11-25T17:48:59.975Z",
+  "target": {
+    "clientCode": "",
+    "timeout": 5
+  },
+  "audienceManager": {
+    "server": "",
+    "analyticsForwardingEnabled": false
+  },
+  "acquisition": {
+    "server": "c00.adobe.com",
+    "appid": "5f7aadc1e077c6116b4839db3e873b5476f837252d977f8fbf4b0381880b07f1"
+  },
+  "analytics": {
+    "rsids": "ggp-mobileapp2015",
+    "server": "ggplimitedpartnership.sc.omtrdc.net",
+    "ssl": false,
+    "offlineEnabled": true,
+    "charset": "UTF-8",
+    "lifecycleTimeout": 300,
+    "privacyDefault": "optedin",
+    "batchLimit": 0,
+    "timezone": "CST",
+    "timezoneOffset": -360,
+    "referrerTimeout": 0,
+    "backdateSessionInfo": false,
+    "poi": []
+  },
+  "messages": [],
+  "remotes": {
+    "analytics.poi": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5655f45264746d571e0003d4.json",
+    "messages": "https://assets.adobedtm.com/b213090c5204bf94318f4ef0539a38b487d10368/scripts/satellite-5655f45164746d4382000991.json"
+  }
+}

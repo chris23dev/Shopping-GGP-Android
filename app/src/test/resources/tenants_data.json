@@ -1,0 +1,1080 @@
+[
+    {
+        "id": 1,
+        "leaseId": 1,
+        "name": "ALDO",
+        "placeWiseRetailerId": 1,
+        "categories": [
+            {
+                "id": 6,
+                "code": "SHOES"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": [
+                {
+                    "code": "mens-shoes/boots",
+                    "position": 2
+                },
+                {
+                    "code": "mens-shoes",
+                    "position": 4
+                },
+                {
+                    "code": "womens-shoes/boots",
+                    "position": 2
+                },
+                {
+                    "code": "womens-shoes/flats",
+                    "position": 3
+                },
+                {
+                    "code": "mens-shoes/loafers",
+                    "position": 4
+                },
+                {
+                    "code": "womens-shoes",
+                    "position": 2
+                }
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "leaseId": 2,
+        "name": "THE CONTAINER STORE",
+        "placeWiseRetailerId": 2,
+        "storeOpenDate": "Sep 1, 2016 12:00:00 AM",
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": []
+        }
+    },
+    {
+        "id": 3,
+        "leaseId": 3,
+        "name": "EXPRESS",
+        "placeWiseRetailerId": 3,
+        "storeOpenDate": "Jun 1, 2016 12:00:00 AM",
+        "categories": [
+            {
+                "id": 1,
+                "code": "FASHION"
+            },
+            {
+                "id": 14,
+                "code": "MENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 15,
+                "code": "WOMENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": [
+                {
+                    "code": "womens-clothing/sweaters",
+                    "position": 10
+                },
+                {
+                    "code": "womens-clothing/socks",
+                    "position": 8
+                },
+                {
+                    "code": "girls-clothing/shorts",
+                    "position": 6
+                },
+                {
+                    "code": "mens-shoes",
+                    "position": 4
+                },
+                {
+                    "code": "jewelry/earrings",
+                    "position": 1
+                },
+                {
+                    "code": "womens-clothing/shorts",
+                    "position": 7
+                },
+                {
+                    "code": "womens-clothing/swimwear",
+                    "position": 11
+                },
+                {
+                    "code": "boys-clothing/baby",
+                    "position": 1
+                },
+                {
+                    "code": "womens-shoes/boots",
+                    "position": 2
+                },
+                {
+                    "code": "womens-shoes",
+                    "position": 2
+                },
+                {
+                    "code": "mens-clothing",
+                    "position": 3
+                },
+                {
+                    "code": "womens-shoes/sneakers-athletic",
+                    "position": 7
+                },
+                {
+                    "code": "mens-clothing/jackets-outerwear",
+                    "position": 2
+                },
+                {
+                    "code": "womens-shoes/heels",
+                    "position": 4
+                },
+                {
+                    "code": "womens-clothing",
+                    "position": 1
+                },
+                {
+                    "code": "mens-clothing/swimwear",
+                    "position": 10
+                },
+                {
+                    "code": "jewelry/rings",
+                    "position": 4
+                },
+                {
+                    "code": "boys-clothing/jackets-outerwear",
+                    "position": 2
+                },
+                {
+                    "code": "boys-clothing",
+                    "position": 6
+                },
+                {
+                    "code": "mens-clothing/sweaters",
+                    "position": 9
+                },
+                {
+                    "code": "womens-shoes/sandals",
+                    "position": 5
+                },
+                {
+                    "code": "mens-clothing/pants",
+                    "position": 3
+                },
+                {
+                    "code": "girls-clothing/shirts-tops",
+                    "position": 5
+                },
+                {
+                    "code": "boys-clothing/shorts",
+                    "position": 5
+                },
+                {
+                    "code": "jewelry",
+                    "position": 7
+                },
+                {
+                    "code": "womens-clothing/jackets-outerwear",
+                    "position": 4
+                },
+                {
+                    "code": "womens-clothing/shirts-tops",
+                    "position": 6
+                },
+                {
+                    "code": "health-beauty/fragrances-perfume",
+                    "position": 1
+                },
+                {
+                    "code": "girls-clothing/baby",
+                    "position": 1
+                },
+                {
+                    "code": "boys-clothing/shirts",
+                    "position": 4
+                },
+                {
+                    "code": "mens-clothing/ties",
+                    "position": 11
+                },
+                {
+                    "code": "girls-clothing/pants",
+                    "position": 4
+                },
+                {
+                    "code": "mens-clothing/shirts",
+                    "position": 4
+                },
+                {
+                    "code": "girls-clothing/jackets-outerwear",
+                    "position": 3
+                },
+                {
+                    "code": "girls-clothing/dresses",
+                    "position": 2
+                },
+                {
+                    "code": "mens-shoes/dress-shoes",
+                    "position": 3
+                },
+                {
+                    "code": "mens-clothing/sunglasses",
+                    "position": 8
+                },
+                {
+                    "code": "mens-clothing/socks",
+                    "position": 6
+                },
+                {
+                    "code": "womens-clothing/handbags-purses",
+                    "position": 3
+                },
+                {
+                    "code": "womens-clothing/tops",
+                    "position": 12
+                },
+                {
+                    "code": "womens-shoes/flats",
+                    "position": 3
+                },
+                {
+                    "code": "girls-clothing/swimwear",
+                    "position": 9
+                },
+                {
+                    "code": "womens-clothing/sunglasses",
+                    "position": 9
+                },
+                {
+                    "code": "mens-clothing/suits",
+                    "position": 7
+                },
+                {
+                    "code": "mens-clothing/shorts",
+                    "position": 5
+                },
+                {
+                    "code": "mens-shoes/sandals",
+                    "position": 5
+                },
+                {
+                    "code": "jewelry/pendants",
+                    "position": 3
+                },
+                {
+                    "code": "womens-clothing/dresses",
+                    "position": 2
+                },
+                {
+                    "code": "mens-shoes/boots",
+                    "position": 2
+                },
+                {
+                    "code": "mens-clothing/underwear",
+                    "position": 12
+                },
+                {
+                    "code": "jewelry/watches",
+                    "position": 5
+                },
+                {
+                    "code": "mens-shoes/sneakers-athletic",
+                    "position": 7
+                },
+                {
+                    "code": "womens-clothing/pants",
+                    "position": 5
+                },
+                {
+                    "code": "boys-clothing/pants",
+                    "position": 3
+                },
+                {
+                    "code": "jewelry/necklaces",
+                    "position": 2
+                },
+                {
+                    "code": "mens-clothing/belts",
+                    "position": 1
+                },
+                {
+                    "code": "mens-shoes/loafers",
+                    "position": 4
+                }
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "leaseId": 4,
+        "name": "SUBWAY",
+        "storeOpenDate": "Jun 15, 2016 12:00:00 AM",
+        "categories": [
+            {
+                "id": 3,
+                "code": "FOOD"
+            },
+            {
+                "id": 17,
+                "code": "QUICK_SERVICE_RESTAURANTS",
+                "parentId": 3
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": []
+        }
+    },
+    {
+        "id": 5,
+        "leaseId": 5,
+        "name": "GAP",
+        "categories": [
+            {
+                "id": 12,
+                "code": "CHILDRENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 1,
+                "code": "FASHION"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": [
+                {
+                    "code": "boys-clothing/baby",
+                    "position": 1
+                },
+                {
+                    "code": "girls-clothing/baby",
+                    "position": 1
+                },
+                {
+                    "code": "girls-clothing",
+                    "position": 5
+                },
+                {
+                    "code": "boys-clothing",
+                    "position": 6
+                }
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "leaseId": 6,
+        "name": "J.CREW",
+        "categories": [
+            {
+                "id": 1,
+                "code": "FASHION"
+            },
+            {
+                "id": 14,
+                "code": "MENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 15,
+                "code": "WOMENS_CLOTHING",
+                "parentId": 1
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": []
+        }
+    },
+    {
+        "id": 7,
+        "leaseId": 7,
+        "name": "PANDORA",
+        "temporarilyClosed": true,
+        "categories": [
+            {
+                "id": 11,
+                "code": "ACCESSORIES",
+                "parentId": 1
+            },
+            {
+                "id": 1,
+                "code": "FASHION"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": [
+                {
+                    "code": "jewelry/pendants",
+                    "position": 3
+                },
+                {
+                    "code": "jewelry/necklaces",
+                    "position": 2
+                },
+                {
+                    "code": "jewelry",
+                    "position": 7
+                },
+                {
+                    "code": "jewelry/earrings",
+                    "position": 1
+                },
+                {
+                    "code": "jewelry/watches",
+                    "position": 5
+                },
+                {
+                    "code": "jewelry/rings",
+                    "position": 4
+                }
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "leaseId": 8,
+        "name": "J.JILL",
+        "categories": [
+            {
+                "id": 1,
+                "code": "FASHION"
+            },
+            {
+                "id": 14,
+                "code": "MENS_CLOTHING",
+                "parentId": 1
+            },
+            {
+                "id": 15,
+                "code": "WOMENS_CLOTHING",
+                "parentId": 1
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": []
+        }
+    },
+    {
+        "id": 9,
+        "leaseId": 9,
+        "parentId": 10,
+        "name": "STARBUCKS",
+        "featuredOpening": true,
+        "storeOpenDate": "Jun 30, 2016 12:00:00 AM",
+        "categories": [
+            {
+                "id": 3,
+                "code": "FOOD"
+            },
+            {
+                "id": 19,
+                "code": "SNACKS_DRINKS",
+                "parentId": 3
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": [
+                {
+                    "code": "gourmet-foods/chocolate",
+                    "position": 2
+                },
+                {
+                    "code": "gourmet-foods/snacks",
+                    "position": 6
+                },
+                {
+                    "code": "gourmet-foods/candy",
+                    "position": 1
+                },
+                {
+                    "code": "gourmet-foods",
+                    "position": 12
+                },
+                {
+                    "code": "gourmet-foods/spices",
+                    "position": 7
+                },
+                {
+                    "code": "gourmet-foods/teas",
+                    "position": 8
+                },
+                {
+                    "code": "gourmet-foods/coffee",
+                    "position": 3
+                }
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "leaseId": 10,
+        "name": "MACY'S",
+        "categories": [],
+        "productData": {
+            "brands": [],
+            "types": [
+                {
+                    "code": "womens-clothing/sweaters",
+                    "position": 10
+                },
+                {
+                    "code": "electronics/smartphones",
+                    "position": 4
+                },
+                {
+                    "code": "womens-clothing/socks",
+                    "position": 8
+                },
+                {
+                    "code": "home-bed-bath/blankets",
+                    "position": 11
+                },
+                {
+                    "code": "womens-clothing/swimwear",
+                    "position": 11
+                },
+                {
+                    "code": "mens-clothing/jackets-outerwear",
+                    "position": 2
+                },
+                {
+                    "code": "girls-clothing/shorts",
+                    "position": 6
+                },
+                {
+                    "code": "sports/golf",
+                    "position": 6
+                },
+                {
+                    "code": "toys-games/puzzles",
+                    "position": 4
+                },
+                {
+                    "code": "home-bed-bath/lamps",
+                    "position": 15
+                },
+                {
+                    "code": "girls-clothing/baby",
+                    "position": 1
+                },
+                {
+                    "code": "womens-clothing/tops",
+                    "position": 12
+                },
+                {
+                    "code": "boys-clothing/sweaters",
+                    "position": 7
+                },
+                {
+                    "code": "jewelry/watches",
+                    "position": 5
+                },
+                {
+                    "code": "health-beauty/makeup",
+                    "position": 4
+                },
+                {
+                    "code": "home-bed-bath/bedding",
+                    "position": 9
+                },
+                {
+                    "code": "sports/outdoors",
+                    "position": 8
+                },
+                {
+                    "code": "girls-clothing/underwear",
+                    "position": 10
+                },
+                {
+                    "code": "health-beauty/lotions",
+                    "position": 3
+                },
+                {
+                    "code": "electronics/televisions",
+                    "position": 8
+                },
+                {
+                    "code": "jewelry/rings",
+                    "position": 4
+                },
+                {
+                    "code": "home-bed-bath/candles",
+                    "position": 12
+                },
+                {
+                    "code": "mens-clothing/swimwear",
+                    "position": 10
+                },
+                {
+                    "code": "sports/football",
+                    "position": 5
+                },
+                {
+                    "code": "home-bed-bath/beds",
+                    "position": 10
+                },
+                {
+                    "code": "electronics/games-game-consoles",
+                    "position": 3
+                },
+                {
+                    "code": "girls-clothing/dresses",
+                    "position": 2
+                },
+                {
+                    "code": "mens-clothing/shirts",
+                    "position": 4
+                },
+                {
+                    "code": "sports/baseball",
+                    "position": 1
+                },
+                {
+                    "code": "sports/basketball",
+                    "position": 2
+                },
+                {
+                    "code": "gourmet-foods/snacks",
+                    "position": 6
+                },
+                {
+                    "code": "sports",
+                    "position": 10
+                },
+                {
+                    "code": "electronics",
+                    "position": 9
+                },
+                {
+                    "code": "sports/fishing",
+                    "position": 4
+                },
+                {
+                    "code": "womens-clothing/jackets-outerwear",
+                    "position": 4
+                },
+                {
+                    "code": "womens-shoes/sneakers-athletic",
+                    "position": 7
+                },
+                {
+                    "code": "electronics/computers",
+                    "position": 1
+                },
+                {
+                    "code": "mens-shoes/loafers",
+                    "position": 4
+                },
+                {
+                    "code": "home-bed-bath/tables",
+                    "position": 18
+                },
+                {
+                    "code": "sports/biking",
+                    "position": 3
+                },
+                {
+                    "code": "mens-clothing/pants",
+                    "position": 3
+                },
+                {
+                    "code": "jewelry/earrings",
+                    "position": 1
+                },
+                {
+                    "code": "mens-clothing/shorts",
+                    "position": 5
+                },
+                {
+                    "code": "mens-clothing/sweaters",
+                    "position": 9
+                },
+                {
+                    "code": "electronics/tablets",
+                    "position": 6
+                },
+                {
+                    "code": "mens-shoes/sandals",
+                    "position": 5
+                },
+                {
+                    "code": "boys-clothing/pants",
+                    "position": 3
+                },
+                {
+                    "code": "womens-clothing/dresses",
+                    "position": 2
+                },
+                {
+                    "code": "gourmet-foods",
+                    "position": 12
+                },
+                {
+                    "code": "toys-games",
+                    "position": 11
+                },
+                {
+                    "code": "mens-shoes",
+                    "position": 4
+                },
+                {
+                    "code": "mens-clothing/belts",
+                    "position": 1
+                },
+                {
+                    "code": "womens-shoes/booties",
+                    "position": 1
+                },
+                {
+                    "code": "girls-clothing/swimwear",
+                    "position": 9
+                },
+                {
+                    "code": "girls-clothing",
+                    "position": 5
+                },
+                {
+                    "code": "womens-clothing/bras-panties-lingerie",
+                    "position": 1
+                },
+                {
+                    "code": "gourmet-foods/candy",
+                    "position": 1
+                },
+                {
+                    "code": "womens-clothing",
+                    "position": 1
+                },
+                {
+                    "code": "mens-shoes/sneakers-athletic",
+                    "position": 7
+                },
+                {
+                    "code": "health-beauty/fragrances-perfume",
+                    "position": 1
+                },
+                {
+                    "code": "womens-clothing/handbags-purses",
+                    "position": 3
+                },
+                {
+                    "code": "boys-clothing/underwear",
+                    "position": 9
+                },
+                {
+                    "code": "electronics/tech-gadgets",
+                    "position": 7
+                },
+                {
+                    "code": "gourmet-foods/chocolate",
+                    "position": 2
+                },
+                {
+                    "code": "boys-clothing/shirts",
+                    "position": 4
+                },
+                {
+                    "code": "boys-clothing/baby",
+                    "position": 1
+                },
+                {
+                    "code": "toys-games/dolls",
+                    "position": 3
+                },
+                {
+                    "code": "womens-shoes/heels",
+                    "position": 4
+                },
+                {
+                    "code": "home-bed-bath/kitchen",
+                    "position": 14
+                },
+                {
+                    "code": "health-beauty",
+                    "position": 8
+                },
+                {
+                    "code": "girls-clothing/jackets-outerwear",
+                    "position": 3
+                },
+                {
+                    "code": "womens-shoes/winter-rain-boots",
+                    "position": 8
+                },
+                {
+                    "code": "womens-shoes/boots",
+                    "position": 2
+                },
+                {
+                    "code": "home-bed-bath",
+                    "position": 7
+                },
+                {
+                    "code": "boys-clothing/shorts",
+                    "position": 5
+                },
+                {
+                    "code": "home-bed-bath/appliances",
+                    "position": 8
+                },
+                {
+                    "code": "toys-games/action-figures",
+                    "position": 1
+                },
+                {
+                    "code": "electronics/sound-systems-receivers",
+                    "position": 5
+                },
+                {
+                    "code": "womens-clothing/sunglasses",
+                    "position": 9
+                },
+                {
+                    "code": "jewelry/necklaces",
+                    "position": 2
+                },
+                {
+                    "code": "boys-clothing/socks",
+                    "position": 6
+                },
+                {
+                    "code": "jewelry/pendants",
+                    "position": 3
+                },
+                {
+                    "code": "health-beauty/nail-care",
+                    "position": 5
+                },
+                {
+                    "code": "girls-clothing/sweaters",
+                    "position": 8
+                },
+                {
+                    "code": "womens-clothing/shorts",
+                    "position": 7
+                },
+                {
+                    "code": "boys-clothing/swimwear",
+                    "position": 8
+                },
+                {
+                    "code": "womens-shoes/sandals",
+                    "position": 5
+                },
+                {
+                    "code": "gourmet-foods/teas",
+                    "position": 8
+                },
+                {
+                    "code": "home-bed-bath/towels",
+                    "position": 19
+                },
+                {
+                    "code": "mens-clothing/socks",
+                    "position": 6
+                },
+                {
+                    "code": "mens-clothing/sunglasses",
+                    "position": 8
+                },
+                {
+                    "code": "womens-shoes",
+                    "position": 2
+                },
+                {
+                    "code": "womens-clothing/shirts-tops",
+                    "position": 6
+                },
+                {
+                    "code": "home-bed-bath/linen",
+                    "position": 16
+                },
+                {
+                    "code": "sports/hunting",
+                    "position": 7
+                },
+                {
+                    "code": "womens-shoes/slippers",
+                    "position": 6
+                },
+                {
+                    "code": "mens-clothing",
+                    "position": 3
+                },
+                {
+                    "code": "boys-clothing",
+                    "position": 6
+                },
+                {
+                    "code": "health-beauty/supplements",
+                    "position": 6
+                },
+                {
+                    "code": "gourmet-foods/coffee",
+                    "position": 3
+                },
+                {
+                    "code": "boys-clothing/jackets-outerwear",
+                    "position": 2
+                },
+                {
+                    "code": "mens-shoes/boots",
+                    "position": 2
+                },
+                {
+                    "code": "home-bed-bath/storage",
+                    "position": 17
+                },
+                {
+                    "code": "girls-clothing/socks",
+                    "position": 7
+                },
+                {
+                    "code": "girls-clothing/pants",
+                    "position": 4
+                },
+                {
+                    "code": "mens-shoes/slippers",
+                    "position": 6
+                },
+                {
+                    "code": "toys-games/board-games",
+                    "position": 2
+                },
+                {
+                    "code": "gourmet-foods/spices",
+                    "position": 7
+                },
+                {
+                    "code": "sports/soccer",
+                    "position": 10
+                },
+                {
+                    "code": "mens-shoes/dress-shoes",
+                    "position": 3
+                },
+                {
+                    "code": "mens-clothing/underwear",
+                    "position": 12
+                },
+                {
+                    "code": "womens-shoes/flats",
+                    "position": 3
+                },
+                {
+                    "code": "sports/swimming",
+                    "position": 11
+                },
+                {
+                    "code": "womens-clothing/pants",
+                    "position": 5
+                },
+                {
+                    "code": "mens-clothing/ties",
+                    "position": 11
+                },
+                {
+                    "code": "mens-shoes/boat-shoes",
+                    "position": 1
+                },
+                {
+                    "code": "jewelry",
+                    "position": 7
+                },
+                {
+                    "code": "mens-clothing/suits",
+                    "position": 7
+                },
+                {
+                    "code": "health-beauty/hair-care",
+                    "position": 2
+                },
+                {
+                    "code": "girls-clothing/shirts-tops",
+                    "position": 5
+                }
+            ]
+        },
+        "unit": {
+            "type": "ANCHOR"
+        }
+    },
+    {
+        "id": 11,
+        "leaseId": 11,
+        "name": "CARDTRONICS (ATM)",
+        "featuredOpening": true,
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            }
+        ],
+        "productData": {
+            "brands": [],
+            "types": []
+        }
+    },
+    {
+        "id": 12,
+        "leaseId": 12,
+        "name": "CARDTRONICS (ATM)",
+        "featuredOpening": true,
+        "storeOpenDate": "Jun 15, 2016 6:00:00 AM",
+        "categories": [
+            {
+                "id": 28,
+                "code": "SERVICES",
+                "parentId": 8
+            },
+            {
+                "id": 8,
+                "code": "SPECIALTY"
+            },
+            {
+                "id": 1000,
+                "code": "STORE_OPENING"
+            }
+        ]
+    }
+]

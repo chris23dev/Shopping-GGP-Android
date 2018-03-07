@@ -1,0 +1,22 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView style="@style/BenefitsIcon"
+        android:id="@+id/icon_view"
+        android:text="@string/gift_icon"/>
+
+    <TextView style="@style/BenefitsTitle"
+        android:id="@+id/title_view"
+        android:text="@string/benefits_title_jfy"
+        />
+
+    <TextView style="@style/BenefitsDescription"
+        android:id="@+id/description_view"
+        android:text="@string/benefits_description_jfy"
+        />
+
+</LinearLayout>

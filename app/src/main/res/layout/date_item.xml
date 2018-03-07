@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_container"
+    android:layout_width="@dimen/space_64"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/divider"
+    android:layout_marginRight="@dimen/divider"
+    android:foreground="?selectableItemBackground"
+    android:theme="@style/SelectableItemWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/day_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/divider"
+        android:textSize="@dimen/size_12"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@color/black"/>
+
+    <TextView
+        android:id="@+id/month_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_4"
+        android:layout_gravity="center|bottom"
+        android:gravity="bottom|center"
+        android:textSize="@dimen/size_10"
+        android:textColor="@color/white"
+        android:background="@color/dark_gray"/>
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center|top"
+        android:paddingBottom="@dimen/space_4"
+        android:textSize="@dimen/size_24"
+        android:textColor="@color/white"
+        android:background="@color/dark_gray"/>
+    
+    <View style="@style/HorizontalDivider"/>
+
+</LinearLayout>
